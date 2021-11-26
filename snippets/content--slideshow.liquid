@@ -1,0 +1,33 @@
+{% liquid
+  assign time_in_ms = timer | times: 1000
+%}
+
+<section
+  data-section-id="{{ section.id }}"
+  data-section-type="slideshow"
+  class="slideshow"
+  data-timer="{{ time_in_ms }}"
+  data-slide-count={{ slides.size }}
+  style="
+    --desktop-height: {{ desktop_height }}vh;
+    --mobile-height: {{ mobile_height }}vh;
+  "
+>
+  <div class="js-slideshow">
+    {% if slides.size == 2 %}
+      {% for i in (1..2) %}
+        {% render 'slideshow-blocks' with
+          id: id,
+          blocks: slides,
+        %}
+      {% endfor %}
+    {% else %}
+      {% render 'slideshow-blocks' with
+        id: id,
+        blocks: slides
+      %}
+    {% endif %}
+  </div>
+
+  {% render 'page-dots', blocks: slides %}
+</section>
