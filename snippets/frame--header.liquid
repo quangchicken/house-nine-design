@@ -125,91 +125,82 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
             <div class="no-js-menu no-js-menu--desktop">
                 {% render 'no-js-navmenu' with menu: menu %}
             </div>
-                <div class="mobile-nav">
-        <a href="#" id="mobile-nav" class="mobile-nav__trigger">
-        <div class="header__menu-icon">
-            {% render 'icon-menu' %}
-        </div>
-        </a>
-    </div>
-
-    <h1 class="header__logo-wrapper">
-        <a href="{{ routes.root_url }}" class="header__logo-image color-inherit logo-orientation--{{ logo_size_control }}">
-        {% capture image_size %}{{ logo_max_size }}x{% endcapture %}
-        {% if logo != blank %}
-            <img
-            class="header__logo"
-            src="{{ logo | img_url: image_size }}"
-            srcset="{{ logo | img_url: image_size }} 1x, {{ logo | img_url: image_size, scale: 2 }} 2x"
-            alt="{{ logo.alt | default: shop.name }}">
-        {% else %}
-            <span class="header__logo-text{% if settings.logo_uppercase %} ttu{% endif %}">
-            {{ shop.name }}
-            </span>
-        {% endif %}
-        {% if transparent_logo != blank and header_is_transparent %}
-            <img
-            class="header__transparent-logo"
-            src="{{ transparent_logo | img_url: image_size }}"
-            srcset="{{ transparent_logo | img_url: image_size }} 1x, {{ transparent_logo | img_url: image_size, scale: 2 }} 2x"
-            alt="{{ transparent_logo.alt | default: shop.name }}">
-        {% endif %}
-        </a>
-    </h1>
-
-    <div class="header__icon-wrapper">
-        <ul class="header__icon-list">
-        {% if locale_selector %}
-            <li class="header__icon header__icon--language">
-            {% render 'header-language-selector' %}
-            </li>
-        {% endif %}
-        {% if currency_selector %}
-            <li class="header__icon header__icon--currency">
-            {% render 'header-currency-selector' %}
-            </li>
-        {% endif %}
-        <li class="header__icon header__icon--search">
-            <noscript>
-            <a href="{{ routes.search_url }}" class="color-inherit">
-            <div class="relative">
-                {{ 'layout.navigation.search' | t }}
-            </div>
-            </a>
-            </noscript>
-            {% render 'quick-search' %}
-        </li>
-        {%- if shop.customer_accounts_enabled -%}
-            <li class="header__icon header__icon--account">
-            <a href="{{ routes.account_url }}" class="quick-cart__trigger color-inherit">
-            {% if customer.id == null %}
-                {{ 'layout.navigation.login' | t }}
-            {% else %}
-                {{ 'layout.navigation.account' | t }}
-            {% endif %}
-            </a>
-            </li>
-        {%- endif -%}
-        <li class="header__icon header__icon--cart">
-            <div class="quick-cart__icon">
-                <a href="{{ routes.cart_url }}" class="quick-cart__trigger color-inherit js-cart-drawer-toggle">
-                <div class="quick-cart__indicator js-cart-count">
-                    <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">
-                    {{ cart.item_count }}
-                    </span>
-                </div>
+            <div class="mobile-nav">
+                <a href="#" id="mobile-nav" class="mobile-nav__trigger">
+                    <div class="header__menu-icon">
+                        {% render 'icon-menu' %}
+                    </div>
                 </a>
             </div>
-        </li>
-        </ul>
-    </div>
-    </div>
-</div>
-<div class="no-js-menu no-js-menu--mobile">
-    {% render 'no-js-navmenu' with menu: menu %}
-</div>
-</div>
 
+            <h1 class="header__logo-wrapper">
+                <a href="{{ routes.root_url }}" class="header__logo-image color-inherit logo-orientation--{{ logo_size_control }}">
+                    {% capture image_size %}{{ logo_max_size }}x{% endcapture %}
+                    {% if logo != blank %}
+                        <img class="header__logo" src="{{ logo | img_url: image_size }}" srcset="{{ logo | img_url: image_size }} 1x, {{ logo | img_url: image_size, scale: 2 }} 2x" alt="{{ logo.alt | default: shop.name }}">
+                    {% else %}
+                        <span class="header__logo-text{% if settings.logo_uppercase %} ttu{% endif %}">
+                            {{ shop.name }}
+                        </span>
+                    {% endif %}
+                    {% if transparent_logo != blank and header_is_transparent %}
+                        <img class="header__transparent-logo" src="{{ transparent_logo | img_url: image_size }}" srcset="{{ transparent_logo | img_url: image_size }} 1x, {{ transparent_logo | img_url: image_size, scale: 2 }} 2x" alt="{{ transparent_logo.alt | default: shop.name }}">
+                    {% endif %}
+                </a>
+            </h1>
+
+            <div class="header__icon-wrapper">
+                <ul class="header__icon-list">
+                    {% if locale_selector %}
+                    <li class="header__icon header__icon--language">
+                        {% render 'header-language-selector' %}
+                    </li>
+                    {% endif %}
+                    {% if currency_selector %}
+                    <li class="header__icon header__icon--currency">
+                        {% render 'header-currency-selector' %}
+                    </li>
+                    {% endif %}
+                    <li class="header__icon header__icon--search">
+                        <noscript>
+                        <a href="{{ routes.search_url }}" class="color-inherit">
+                        <div class="relative">
+                            {{ 'layout.navigation.search' | t }}
+                        </div>
+                        </a>
+                        </noscript>
+                        {% render 'quick-search' %}
+                    </li>
+                    {%- if shop.customer_accounts_enabled -%}
+                        <li class="header__icon header__icon--account">
+                            <a href="{{ routes.account_url }}" class="quick-cart__trigger color-inherit">
+                            {% if customer.id == null %}
+                                {{ 'layout.navigation.login' | t }}
+                            {% else %}
+                                {{ 'layout.navigation.account' | t }}
+                            {% endif %}
+                            </a>
+                        </li>
+                    {%- endif -%}
+                        <li class="header__icon header__icon--cart">
+                            <div class="quick-cart__icon">
+                                <a href="{{ routes.cart_url }}" class="quick-cart__trigger color-inherit js-cart-drawer-toggle">
+                                    <div class="quick-cart__indicator js-cart-count">
+                                        <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">
+                                        {{ cart.item_count }}
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="no-js-menu no-js-menu--mobile">
+            {% render 'no-js-navmenu' with menu: menu %}
+        </div>
+    </div>
 </section>
 
 {% assign proper_alpha = transparent_header_border_opacity | divided_by: 100.00 %}
