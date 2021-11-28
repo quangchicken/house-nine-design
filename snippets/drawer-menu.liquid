@@ -1,30 +1,29 @@
 {% liquid
-  assign links = linklists[menu].links
+    assign links = linklists[menu].links
 
-  assign account_visible = false
-  if shop.customer_accounts_enabled
-    assign account_visible = true
-  endif
-
-  assign language_visible = false
-  if shop.published_locales.size > 1
-    assign language_visible = true
-  endif
-
-  assign currency_visible = false
-  if shop.enabled_currencies.size > 1
-    assign currency_visible = true
-  endif
-
-  assign logo_uppercase = settings.logo_uppercase
-
-  assign logo_size_control = 'height'
-
-  if logo != blank
-    if logo.aspect_ratio > 1.5
-      assign logo_size_control = 'width'
+    assign account_visible = false
+    if shop.customer_accounts_enabled
+        assign account_visible = true
     endif
-  endif
+
+    assign language_visible = false
+    if shop.published_locales.size > 1
+        assign language_visible = true
+    endif
+
+    assign currency_visible = false
+    if shop.enabled_currencies.size > 1
+        assign currency_visible = true
+    endif
+
+    assign logo_uppercase = settings.logo_uppercase
+    assign logo_size_control = 'height'
+
+    if logo != blank
+        if logo.aspect_ratio > 1.5
+            assign logo_size_control = 'width'
+        endif
+    endif
 %}
 
 {% capture settings %}
