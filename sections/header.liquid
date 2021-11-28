@@ -1,25 +1,25 @@
 {% render 'frame--header' with
-  id: section.id,
-  detect_menu_length: section.settings.detect_menu_length,
-  header_style: section.settings.header_style,
-  nav_alignment: section.settings.nav_alignment,
-  logo: section.settings.logo,
-  logo_max_size: section.settings.logo_max_size,
-  menu: section.settings.menu,
-  transparent_index_header_enabled: section.settings.transparent_index_header_enabled,
-  transparent_logo: section.settings.transparent_logo,
-  transparent_header_foreground_color: section.settings.transparent_header_foreground_color,
-  transparent_header_border_color: section.settings.transparent_header_border_color,
-  transparent_header_border_opacity: section.settings.transparent_header_border_opacity,
-  show_locale_selector: section.settings.show_locale_selector,
-  show_currency_selector: section.settings.show_currency_selector,
-  blocks: section.blocks
+    id: section.id,
+    detect_menu_length: section.settings.detect_menu_length,
+    header_style: section.settings.header_style,
+    nav_alignment: section.settings.nav_alignment,
+    logo: section.settings.logo,
+    logo_max_size: section.settings.logo_max_size,
+    menu: section.settings.menu,
+    transparent_index_header_enabled: section.settings.transparent_index_header_enabled,
+    transparent_logo: section.settings.transparent_logo,
+    transparent_header_foreground_color: section.settings.transparent_header_foreground_color,
+    transparent_header_border_color: section.settings.transparent_header_border_color,
+    transparent_header_border_opacity: section.settings.transparent_header_border_opacity,
+    show_locale_selector: section.settings.show_locale_selector,
+    show_currency_selector: section.settings.show_currency_selector,
+    blocks: section.blocks
 %}
 
 {% render 'drawer-menu' with
-  menu: section.settings.menu,
-  logo: section.settings.logo,
-  logo_max_size: section.settings.logo_max_size,
+    menu: section.settings.menu,
+    logo: section.settings.logo,
+    logo_max_size: section.settings.logo_max_size,
 %}
 
 {% schema %}
