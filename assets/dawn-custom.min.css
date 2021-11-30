@@ -1,0 +1,11 @@
+@media only screen and (max-width: 989px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
