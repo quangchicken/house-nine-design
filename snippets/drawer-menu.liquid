@@ -129,44 +129,45 @@
                             <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-locale-input />
                         {%- endif -%}
 
-                {%- if currency_visible -%}
-                  <li class="drawer-menu__item" data-list-item>
-                    <a class="drawer-menu__link" href="#" data-item="secondary">
-                      {{ 'sections.drawer_menu.currency' | t }}
-                      {% render 'icon-chevron-right' %}
-                    </a>
-                    <ul class="drawer-menu__list drawer-menu__list--sub">
-                      <li class="drawer-menu__item drawer-menu__item--heading">
-                        <button class="drawer-menu__link" data-item="secondaryHeading">
-                          <span>{{ 'sections.drawer_menu.currency' | t }}</span>
-                          {% render 'icon-chevron-left' %}
-                        </button>
-                      </li>
-                      {% for currency in form.available_currencies %}
-                        <li class="drawer-menu__item" data-list-item>
-                          <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="currency" data-value="{{ currency.iso_code }}">
-                            <div class="drawer-menu__radio">
-                              {% if currency.iso_code == form.current_currency.iso_code %}<div></div>{% endif %}
-                            </div>
-                            <span>{{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}</span>
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </li>
-                  <input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" data-currency-input />
+                        {%- if currency_visible -%}
+                            <li class="drawer-menu__item" data-list-item>
+                                <a class="drawer-menu__link" href="#" data-item="secondary">
+                                {{ 'sections.drawer_menu.currency' | t }}
+                                {% render 'icon-chevron-right' %}
+                                </a>
+                                <ul class="drawer-menu__list drawer-menu__list--sub">
+                                    <li class="drawer-menu__item drawer-menu__item--heading">
+                                        <button class="drawer-menu__link" data-item="secondaryHeading">
+                                        <span>{{ 'sections.drawer_menu.currency' | t }}</span>
+                                        {% render 'icon-chevron-left' %}
+                                        </button>
+                                    </li>
+                                    {% for currency in form.available_currencies %}
+                                        <li class="drawer-menu__item" data-list-item>
+                                        <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="currency" data-value="{{ currency.iso_code }}">
+                                            <div class="drawer-menu__radio">
+                                            {% if currency.iso_code == form.current_currency.iso_code %}<div></div>{% endif %}
+                                            </div>
+                                            <span>{{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}</span>
+                                        </a>
+                                        </li>
+                                    {%- endfor -%}
+                                </ul>
+                            </li>
+                            <input type="hidden" name="currency_code" id="CurrencySelector" value="{{ form.current_currency.iso_code }}" data-currency-input />
+                        {%- endif -%}
+                    {%- endform -%}
                 {%- endif -%}
-              {%- endform -%}
-            {%- endif -%}
-          <li class="drawer-menu__item drawer-menu__item--search">
-            <a class="drawer-menu__link" href="#" data-search>
-              {{ 'sections.drawer_menu.search' | t }}
-            </a>
-          </li>
+
+                <li class="drawer-menu__item drawer-menu__item--search">
+                    <a class="drawer-menu__link" href="#" data-search>
+                    {{ 'sections.drawer_menu.search' | t }}
+                    </a>
+                </li>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </section>
 
 <style>
