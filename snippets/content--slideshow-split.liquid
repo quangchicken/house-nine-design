@@ -27,7 +27,7 @@
     "
     >
     <div class="slideshow-split__underlay hide" style="background-color: {{ overlay_color }};"></div>
-        <div class="slideshow-split__slideshow" data-flickity='{ "groupCells": {true} }'>
+        <div class="slideshow-split__slideshow" data-flickity='{ "groupCells": 3 }'>
             {% if blocks.size == 2 %}
                 {% for i in (1..2) %}
                     {% render 'slideshow-split-blocks' with
