@@ -55,35 +55,37 @@
         <div class="slideshow-split__content">
             <div class="slideshow-split__content-inner animation__staggered-children-fade-in">
                 <div class="slideshow-split__content-inner-container">
-                {% if overline != blank %}
-                    <h2
-                        class="slideshow-split__overline overline"
-                        data-theme-editor-setting="section.{{ id }}.overline"
-                        style="color: {{ text_color }};"
-                    >
-                        {{ overline }}
-                    </h2>
-                {% endif %}
-                {% if title != blank %}
-                    <h2
-                        class="slideshow-split__heading type-heading-display"
-                        data-theme-editor-setting="section.{{ id }}.title"
-                        style="color: {{ text_color }}; max-width: {{ text_max_width }}rem;"
-                    >
-                        {{ title }}
-                    </h2>
-                {% endif %}
-                {% if subheading != blank %}
-                    <p class="slideshow-split__subheading type-body-regular" data-theme-editor-setting="section.{{ id }}.subheading" style="color: {{ text_color }}; max-width: {{ text_max_width }}rem;">
-                        {{ subheading }}
-                    </p>
-                {% endif %}
+                {% if showOverlayCopy %}
+                    {% if overline != blank %}
+                        <h2
+                            class="slideshow-split__overline overline"
+                            data-theme-editor-setting="section.{{ id }}.overline"
+                            style="color: {{ text_color }};"
+                        >
+                            {{ overline }}
+                        </h2>
+                    {% endif %}
+                    {% if title != blank %}
+                        <h2
+                            class="slideshow-split__heading type-heading-display"
+                            data-theme-editor-setting="section.{{ id }}.title"
+                            style="color: {{ text_color }}; max-width: {{ text_max_width }}rem;"
+                        >
+                            {{ title }}
+                        </h2>
+                    {% endif %}
+                    {% if subheading != blank %}
+                        <p class="slideshow-split__subheading type-body-regular" data-theme-editor-setting="section.{{ id }}.subheading" style="color: {{ text_color }}; max-width: {{ text_max_width }}rem;">
+                            {{ subheading }}
+                        </p>
+                    {% endif %}
 
-                {%- if link != blank and link_text != blank -%}
-                    <a href="{{ link }}" class="slideshow-split__link bttn" data-theme-editor-setting="section.{{ id }}.link_text">
-                        {{ link_text }}
-                    </a>
-                {%- endif -%}
+                    {%- if link != blank and link_text != blank -%}
+                        <a href="{{ link }}" class="slideshow-split__link bttn" data-theme-editor-setting="section.{{ id }}.link_text">
+                            {{ link_text }}
+                        </a>
+                    {%- endif -%}
+                {% endif %}
             </div>
         </div>
     </div>
