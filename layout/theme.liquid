@@ -67,7 +67,7 @@
   {% render 'theme-setting-vars' %}
   {{ 'index.css' | asset_url | stylesheet_tag }}
   {% render 'theme-liquid-css-assets' %}
-
+  {{ 'custom.min.css' | asset_url | stylesheet_tag }}
   {{ content_for_header }}
   {% render 'shogun-head' %}
 </head>
