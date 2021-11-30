@@ -102,32 +102,32 @@
                 {%- if language_visible or currency_visible -%}
                     {%- form 'localization', class: 'drawer-menu__form' -%}
                         {%- if language_visible -%}
-                        <li class="drawer-menu__item" data-list-item>
-                            <a class="drawer-menu__link" href="#" data-item="secondary">
-                                {{ 'sections.drawer_menu.language' | t }}
-                                {% render 'icon-chevron-right' %}
-                            </a>
-                            <ul class="drawer-menu__list drawer-menu__list--sub">
-                                <li class="drawer-menu__item drawer-menu__item--heading">
-                                    <button class="drawer-menu__link" data-item="secondaryHeading">
-                                        <span>{{ 'sections.drawer_menu.language' | t }}</span>
-                                        {% render 'icon-chevron-left' %}
-                                    </button>
-                                </li>
-                                {% for locale in form.available_locales %}
-                                    <li class="drawer-menu__item" data-list-item>
-                                        <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="locale" data-value="{{ locale.iso_code }}">
-                                            <div class="drawer-menu__radio">
-                                                {% if locale.iso_code == form.current_locale.iso_code %}<div></div>{% endif %}
-                            </div>
-                            <span>{{ locale.endonym_name }}</span>
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </li>
-                  <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-locale-input />
-                {%- endif -%}
+                            <li class="drawer-menu__item" data-list-item>
+                                <a class="drawer-menu__link" href="#" data-item="secondary">
+                                    {{ 'sections.drawer_menu.language' | t }}
+                                    {% render 'icon-chevron-right' %}
+                                </a>
+                                <ul class="drawer-menu__list drawer-menu__list--sub">
+                                    <li class="drawer-menu__item drawer-menu__item--heading">
+                                        <button class="drawer-menu__link" data-item="secondaryHeading">
+                                            <span>{{ 'sections.drawer_menu.language' | t }}</span>
+                                            {% render 'icon-chevron-left' %}
+                                        </button>
+                                    </li>
+                                    {% for locale in form.available_locales %}
+                                        <li class="drawer-menu__item" data-list-item>
+                                            <a class="drawer-menu__link drawer-menu__link--cb" href="#" data-item="locale" data-value="{{ locale.iso_code }}">
+                                                <div class="drawer-menu__radio">
+                                                    {% if locale.iso_code == form.current_locale.iso_code %}<div></div>{% endif %}
+                                                </div>
+                                                <span>{{ locale.endonym_name }}</span>
+                                            </a>
+                                        </li>
+                                    {%- endfor -%}
+                                </ul>
+                            </li>
+                            <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-locale-input />
+                        {%- endif -%}
 
                 {%- if currency_visible -%}
                   <li class="drawer-menu__item" data-list-item>
