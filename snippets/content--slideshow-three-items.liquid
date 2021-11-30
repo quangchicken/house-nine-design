@@ -1,36 +1,22 @@
 {% assign time_in_ms = timer | times: 1000 %}
-{% capture current %}{% cycle 1, 2 %}{% endcapture %}
-{% assign proper_alpha = overlay_opacity | divided_by: 100.00 %}
-
-{% assign modifiers = '' %}
-
-{% assign modifiers = modifiers | append: ' slideshow-split--align-' | append: vertical_text_position %}
-{% assign modifiers = modifiers | append: ' slideshow-split--justify-' | append: horizontal_text_position %}
-
-{% if blocks.size == 1 %}
-  {% assign modifiers = modifiers | append: ' slideshow-split--is-single' %}
-{% endif %}
-
-{% assign show_nav_dots = true %}
-
-<section
-  data-section-id="{{ section.id }}"
-  data-section-type="slideshow-split"
-  class="slideshow-split{{ modifiers }}"
-  data-timer="{{ time_in_ms }}"
-  data-slide-count={{ blocks.size }}
-  style="
-    --desktop-height: {{ desktop_height }}vh;
-    --mobile-height: {{ mobile_height }}vh;
-    --text-container-background: {{ text_container_color }};
-  "
->
-  <div
-    class="slideshow-split__underlay hide"
-    style="background-color: {{ overlay_color }};"
-  ></div>
-
-  <div class="slideshow-split__slideshow">
+    {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+    {% assign proper_alpha = overlay_opacity | divided_by: 100.00 %}
+    {% assign modifiers = '' %}
+    {% assign modifiers = modifiers | append: ' slideshow-split--align-' | append: vertical_text_position %}
+    {% assign modifiers = modifiers | append: ' slideshow-split--justify-' | append: horizontal_text_position %}
+    {% if blocks.size == 1 %}
+        {% assign modifiers = modifiers | append: ' slideshow-split--is-single' %}
+    {% endif %}
+    {% assign show_nav_dots = true %}
+<section data-section-id="{{ section.id }}" data-section-type="slideshow-split" class="slideshow-split{{ modifiers }}" data-timer="{{ time_in_ms }}" data-slide-count={{ blocks.size }}
+    style="
+        --desktop-height: {{ desktop_height }}vh;
+        --mobile-height: {{ mobile_height }}vh;
+        --text-container-background: {{ text_container_color }};
+    "
+    >
+    <div class="slideshow-split__underlay hide" style="background-color: {{ overlay_color }};"></div>
+    <div class="slideshow-split__slideshow">
     {% if blocks.size == 2 %}
       {% for i in (1..2) %}
         {% render 'slideshow-split-blocks' with
