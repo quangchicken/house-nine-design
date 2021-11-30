@@ -89,7 +89,9 @@
                 {% if icon != blank %}
                     <div class="icon">
                         <picture>
-                            
+                            <source media="(min-width: 1024px)" srcset="{{ icon | img_url: 'master' }}">
+                            <source media="(min-width: 640px)" srcset="{{ icon | img_url: '480x' }}">
+                            <img loading="lazy" importance="low" src="{{ icon | img_url: 'master' }}" alt="" />
                         </picture>
                     </div>
                 {% endif %}
