@@ -89,9 +89,9 @@
                 {% if icon != blank %}
                     <div class="slideshow-icon">
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="{{ icon | img_url: '480x' }}">
-                            <source media="(min-width: 640px)" srcset="{{ icon | img_url: '480x' }}">
-                            <img loading="lazy" importance="low" src="{{ icon | img_url: '480x' }}" alt="" />
+                            <source media="(min-width: 1024px)" srcset="{{ icon | img_url: '250x' }}">
+                            <source media="(min-width: 640px)" srcset="{{ icon | img_url: '250x' }}">
+                            <img loading="lazy" importance="low" src="{{ icon | img_url: '250x' }}" alt="" />
                         </picture>
                     </div>
                 {% endif %}
