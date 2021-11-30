@@ -40,21 +40,21 @@
 <section class="drawer-menu" data-drawer-menu>
     <div class="drawer-menu__overlay" data-overlay></div>
     <div class="drawer-menu__panel shadow-3">
-    <div class="drawer-menu__search-overlay" data-quick-search>
-      <script type="application/json" data-settings>{{ settings }}</script>
-      <form action="{{ routes.search_url }}" class="quick-search__container" autocomplete="off">
-        <div class="drawer-menu__search-bar">
-          <input
-            class="drawer-menu__search-input input-reset"
-            type="text"
-            name="q"
-            placeholder="{{ 'search.placeholder' | t }}"
-            data-input
-          />
-          <a class="drawer-menu__search-close" href="#" data-close>
-            {% render 'icon-chevron-left' %}
-          </a>
-        </div>
+        <div class="drawer-menu__search-overlay" data-quick-search>
+            <script type="application/json" data-settings>{{ settings }}</script>
+            <form action="{{ routes.search_url }}" class="quick-search__container" autocomplete="off">
+            <div class="drawer-menu__search-bar">
+                <input
+                    class="drawer-menu__search-input input-reset"
+                    type="text"
+                    name="q"
+                    placeholder="{{ 'search.placeholder' | t }}"
+                    data-input
+                />
+                <a class="drawer-menu__search-close" href="#" data-close>
+                    {% render 'icon-chevron-left' %}
+                </a>
+            </div>
         <div class="drawer-menu__search-results" data-results scroll-lock-ignore></div>
       </form>
     </div>
