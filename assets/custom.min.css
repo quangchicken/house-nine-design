@@ -13,3 +13,7 @@
 .slideshow-split__slide {
   width: 33.33333%;
 }
+
+.slideshow-split__slide:nth-child(2) {
+  width: 40%;
+}
