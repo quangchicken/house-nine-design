@@ -45,11 +45,11 @@ picture {
   margin-left: 30px;
 }
 
-.footer__newsletter__input-container {
+.footer__newsletter .newsletter__input-container {
   padding: 0 30px;
 }
 
-.footer__newsletter__input-container .input {
+.footer__newsletter .newsletter__input-container .input {
   padding: 0;
   height: auto;
 }
