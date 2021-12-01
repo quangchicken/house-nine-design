@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.slideshow .owl-stage .owl-item {
+  height: 100%;
+}
+
 .slideshow__block {
   height: 100%;
 }
