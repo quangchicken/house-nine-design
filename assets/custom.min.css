@@ -10,6 +10,10 @@
   }
 }
 
+.slideshow .wrapper {
+  overflow: hidden;
+}
+
 .slideshow .owl-carousel {
   width: 50%;
 }
