@@ -76,6 +76,7 @@
         {% if blocks.size > 0 %}
             <div class="footer__menu">
             {% for block in blocks %}
+                {% comment %}
                 {% if block.type == 'text' and block.settings.text != blank %}
                 <div class="footer__col-text">
                     <h3 class="footer__col-title overline mt0 mb3">{{ block.settings.title }}</h3>
@@ -84,6 +85,7 @@
                     {% endif %}
                 </div>
                 {% endif %}
+                {% endcomment %}
 
                 {% if block.type == 'link_list' and linklists[block.settings.menu].links.size > 0 %}
                 <div class="footer__col-list">
