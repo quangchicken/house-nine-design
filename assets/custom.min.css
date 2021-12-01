@@ -27,6 +27,7 @@ picture {
 .footer__top .row {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .footer__top-logo picture {
