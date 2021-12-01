@@ -47,6 +47,8 @@ picture {
 .footer__newsletter .input {
   padding: 0;
   height: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .footer__newsletter .input::placeholder {
