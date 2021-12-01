@@ -80,7 +80,7 @@ picture {
   left: 100%;
   bottom: -10px;
   padding: 0;
-  font-family: "karla_n4";
+  font-family: "karla_n4", sans-serif;
 }
 
 .footer__signup-text {
