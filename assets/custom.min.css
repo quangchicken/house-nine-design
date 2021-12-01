@@ -63,6 +63,7 @@
 }
 
 .slideshow__underlay {
+  text-align: center;
   position: absolute;
   z-index: 2;
   top: 50%;
