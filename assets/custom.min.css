@@ -114,6 +114,7 @@ picture {
 
 .footer__contact-mail {
   display: flex;
+  align-items: flex-end;
 }
 
 .footer__contact-mail h2 {
@@ -123,6 +124,10 @@ picture {
   margin-right: 15px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.footer__contact-mail a {
+  line-height: 1;
 }
 
 .footer__menu {
