@@ -116,6 +116,13 @@ picture {
   display: flex;
 }
 
+.footer__contact-mail h2 {
+  margin: 0;
+  font-family: "karla_n4", sans-serif;
+  line-height: 1;
+  margin-right: 15px;
+}
+
 .footer__menu .list {
   margin: 0;
   padding: 0;
