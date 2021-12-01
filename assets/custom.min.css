@@ -29,6 +29,13 @@
   height: 100%;
 }
 
+.slideshow .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .slideshow .owl-carousel .owl-dots .owl-dot {
   width: 10px;
   height: 10px;
