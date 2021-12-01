@@ -39,6 +39,10 @@ picture {
   align-items: flex-end;
 }
 
+.footer__newsletter__input-container input {
+  padding: 0;
+}
+
 .footer__newsletter input::placeholder {
   opacity: 0;
 }
