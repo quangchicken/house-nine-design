@@ -217,10 +217,11 @@
           "1602305412730"
         ],
         "settings": {
+          "logo_footer": "shopify:\/\/shop_images\/H9_marks_forest-01.png",
           "show_headings": true,
           "show_payment_icons": false,
           "show_newsletter_signup": true,
-          "newsletter_subheading": "Good things come to those who subscribe",
+          "newsletter_subheading": "Join Our Mailing List",
           "show_locale_selector": false,
           "show_currency_selector": false
         }
