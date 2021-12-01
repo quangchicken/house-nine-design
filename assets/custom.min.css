@@ -154,7 +154,7 @@ picture {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 769px) {
   .footer__menu .list {
     display: block;
   }
