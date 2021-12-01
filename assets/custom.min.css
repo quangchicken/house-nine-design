@@ -23,6 +23,11 @@ picture {
   padding: 50px 0;
 }
 
+.footer__top .row {
+  display: flex;
+  align-items: flex-end;
+}
+
 .footer__top-logo img {
   height: 50px;
 }
