@@ -49,6 +49,7 @@ picture {
 .footer__newsletter .newsletter__input-container {
   padding: 0 10px;
   max-width: 350px;
+  margin-left: 0;
 }
 
 .footer__newsletter .newsletter__input-container .input {
