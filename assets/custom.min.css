@@ -10,13 +10,17 @@
   }
 }
 
-.slideshow .owl-stage {
+.slideshow .owl-carousel {
+  width: 50%;
+}
+
+.slideshow .owl-carousel .owl-stage {
   display: flex;
   align-self: center;
   height: 100%;
 }
 
-.slideshow .owl-stage .owl-item {
+.slideshow .owl-carousel .owl-stage .owl-item {
   height: 100%;
 }
 
