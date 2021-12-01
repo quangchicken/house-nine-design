@@ -61,3 +61,10 @@
 .slideshow__block .inner {
   height: 100%;
 }
+
+.slideshow__underlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
