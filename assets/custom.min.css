@@ -45,6 +45,8 @@ picture {
 
 .footer__signup-text {
   margin: 0;
+  width: auto;
+  white-space: nowrap;
 }
 
 .slideshow .wrapper {
