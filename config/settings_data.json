@@ -869,7 +869,7 @@
         ],
         "settings": {
           "custom_class": "",
-          "show_underlay": false,
+          "show_underlay": true,
           "heading": "",
           "subheading": "HOUSE NINE DESIGN",
           "text": "",
