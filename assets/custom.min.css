@@ -39,8 +39,9 @@ picture {
   align-items: flex-end;
 }
 
-.footer__newsletter__input-container input {
+.footer__newsletter__input-container .input {
   padding: 0;
+  height: auto;
 }
 
 .footer__newsletter input::placeholder {
