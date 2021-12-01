@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+.footer__top-logo {
+  height: 50px;
+}
+
 .slideshow .wrapper {
   overflow: hidden;
 }
