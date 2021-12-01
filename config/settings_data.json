@@ -871,12 +871,12 @@
           "custom_class": "",
           "show_underlay": false,
           "heading": "",
-          "subheading": "",
+          "subheading": "HOUSE NINE DESIGN",
           "text": "",
-          "button_link": "",
-          "button_text": "",
+          "button_link": "#",
+          "button_text": "Contact Us",
           "icon": "shopify:\/\/shop_images\/H9_wbmarks_forest-04.jpg",
-          "image_height": 100
+          "image_height": 70
         }
       }
     },
