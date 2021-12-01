@@ -64,6 +64,8 @@ picture {
 .footer__newsletter-button {
   text-transform: uppercase;
   height: auto;
+  right: 0;
+  bottom: 0;
 }
 
 .footer__signup-text {
