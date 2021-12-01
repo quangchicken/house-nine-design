@@ -47,6 +47,14 @@ picture {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 769px) {
+  .footer__newsletter {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
 .footer__newsletter .newsletter__input-container {
   padding: 0 10px;
   max-width: 350px;
