@@ -118,6 +118,7 @@ picture {
 .footer__menu .list li {
   margin-right: 15px;
   text-transform: uppercase;
+  font-family: "karla_n4", sans-serif;
 }
 
 .footer__menu .list li:last-child {
