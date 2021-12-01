@@ -23,7 +23,7 @@
   overflow: visible;
 }
 
-.slideshow .owl-carousel .owl-stage {
+.slideshow .owl-carousel .owl-stage-outer .owl-stage {
   display: flex;
   align-self: center;
   height: 100%;
