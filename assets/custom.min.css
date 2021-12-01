@@ -34,6 +34,7 @@ picture {
 
 .footer__newsletter {
   display: flex;
+  align-items: flex-end;
 }
 
 .slideshow .wrapper {
