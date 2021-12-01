@@ -870,7 +870,7 @@
         ],
         "settings": {
           "custom_class": "",
-          "show_underlay": true,
+          "show_underlay": false,
           "color_underlay": "#fff",
           "heading": "",
           "subheading": "HOUSE NINE DESIGN",
