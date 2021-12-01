@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="{{ 'owl.theme.default.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'owl.carousel.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'owl.theme.default.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'owl.carousel.css' | asset_url | stylesheet_tag }}</noscript>
+
 {% if section.blocks.size > 0 %}
 <div class="banner slideshow">
     <div class="wrapper">
@@ -62,7 +68,7 @@ jQuery(document).ready(function () {
             items: 1,
             loop: true,
             nav: false,
-            dots: false,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 3500,
             autoplayHoverPause: true,
