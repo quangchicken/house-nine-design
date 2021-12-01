@@ -50,7 +50,7 @@ picture {
 @media only screen and (max-width: 769px) {
   .footer__newsletter {
     width: 100%;
-    margin-top: 15px 0 0;
+    margin: 15px 0 0;
   }
 }
 
