@@ -28,6 +28,24 @@
   height: 100%;
 }
 
+.slideshow .owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0;
+  border-radius: 50%;
+  opacity: .25;
+  cursor: pointer;
+}
+
+.slideshow .owl-carousel .owl-dots .owl-dot.active {
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
 .slideshow__block {
   height: 100%;
 }
