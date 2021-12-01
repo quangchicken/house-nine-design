@@ -147,6 +147,7 @@ picture {
   margin-right: 15px;
   text-transform: uppercase;
   font-family: "karla_n4", sans-serif;
+  line-height: 1;
 }
 
 .footer__menu .list li:last-child {
