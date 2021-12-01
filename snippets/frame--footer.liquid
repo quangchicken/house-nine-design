@@ -103,6 +103,7 @@
             </section>
             <!-- <hr class="footer__divider mt6-l mt5 mb3 b--solid b--default bb" style="border-top: 0; border-right: 0; border-left: 0;" /> -->
         {% endif %}
+        {% comment %}
         <div class="footer__bottom mb5">
             {%- render 'cross-border' with
                 show_locale: locale_selector,
@@ -123,6 +124,7 @@
                 </div>
             {%- endif -%}
         </div>
+        {% endcomment %}
         {% if show_payment_icons %}
             <div class="footer__payment-icons mb2">
                 {% unless shop.enabled_payment_types == empty %}
