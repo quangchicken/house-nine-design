@@ -38,11 +38,13 @@
             </div>
         </div>
         <div class="slideshow__underlay">
+            {% if section.settings.subheading != blank %}
             <h4 class="slideshow__underlay-subheading">{{ section.settings.subheading }}</h4>
-
+            {% endif %}
+            {% if section.settings.heading != blank %}
             <h2 class="slideshow__underlay-heading">{{ section.settings.heading }}</h2>
-
-            {% if section.settings.button_link != blank or section.settings.button_text != blank %}
+            {% endif %}
+            {% if section.settings.text != blank %}
             <p class="slideshow__underlay-text">{{ section.settings.text }}</p>
             {% endif %}
             {% if section.settings.button_link != blank or section.settings.button_text != blank %}
