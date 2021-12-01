@@ -60,7 +60,7 @@
             {% endif %}
             {% if section.settings.icon != blank %}
                 <picture>
-                    <img src="{{ block.settings.image | img_url: '150x' }}" alt="" />
+                    <img src="{{ section.settings.icon | img_url: '150x' }}" alt="" />
                 </picture>
             {% endif %}
         </div>
@@ -74,8 +74,8 @@
     color: {{ section.settings.color_underlay }};
 }
 .slideshow__block .inner img{
-    height: 100%;
-    max-height: {{ section.settings.image_height }}%;
+    height: 100vh;
+    max-height: {{ section.settings.image_height }}vh;
     object-fit: cover;
     object-position: center;
 }
