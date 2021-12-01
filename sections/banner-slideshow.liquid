@@ -75,7 +75,7 @@
 }
 .slideshow__block .inner img{
     height: 100vh;
-    max-height: {{ section.settings.image_height }}vh;
+    max-height: calc({{ section.settings.image_height }}vh - 65px);
     object-fit: cover;
     object-position: center;
 }
@@ -157,7 +157,7 @@ jQuery(document).ready(function () {
             "min": 20,
             "max": 100,
             "step": 10,
-            "default": 90
+            "default": 100
         }
     ],
     "blocks": [
