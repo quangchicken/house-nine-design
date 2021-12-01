@@ -16,10 +16,11 @@
 {% endunless %}
 
 <footer data-section-id="{{ id }}" data-section-type="footer" class="footer{{ modifiers }}">
+    {% if section.settings.logo_footer != blank or show_newsletter_signup != false %}
     <div class="footer__top">
         <div class="footer__top-logo">
             <picture>
-                <img src="{{ section.settings.footer_logo | img_url: '150x' }}" alt="" />
+                <img src="{{ section.settings.logo_footer | img_url: '150x' }}" alt="" />
             </picture>
         </div>
         {% if show_newsletter_signup %}
@@ -57,6 +58,7 @@
         </div>
         {% endif %}
     </div>
+    {% endif %}
     
     <div class="footer__container">
 
