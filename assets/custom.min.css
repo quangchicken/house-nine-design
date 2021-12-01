@@ -121,6 +121,8 @@ picture {
   font-family: "karla_n4", sans-serif;
   line-height: 1;
   margin-right: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .footer__menu {
