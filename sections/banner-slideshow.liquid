@@ -59,7 +59,7 @@
                 {% endif %}
             {% endif %}
             {% if section.settings.icon != blank %}
-                
+
             {% endif %}
         </div>
     </div>
@@ -127,6 +127,16 @@ jQuery(document).ready(function () {
             "type": "image_picker",
             "id": "icon",
             "label": "Icon"
+        },
+        {
+            "type": "range",
+            "id": "desktop_height",
+            "label": "Height",
+            "unit": "%",
+            "min": 50,
+            "max": 100,
+            "step": 5,
+            "default": 100
         }
     ],
     "blocks": [
