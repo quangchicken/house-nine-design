@@ -98,6 +98,10 @@ picture {
   line-height: 1;
 }
 
+.footer__menu .list {
+  margin: 0;
+}
+
 .slideshow .wrapper {
   overflow: hidden;
 }
