@@ -54,7 +54,7 @@ picture {
   padding: 0;
   height: auto;
   background-color: transparent;
-  border: none;
+  border: 1px solid #000000;
 }
 
 .footer__newsletter .input::placeholder {
