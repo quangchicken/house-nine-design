@@ -32,6 +32,10 @@ picture {
   height: 50px;
 }
 
+.footer__newsletter {
+  display: flex;
+}
+
 .slideshow .wrapper {
   overflow: hidden;
 }
