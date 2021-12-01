@@ -141,9 +141,10 @@
                 {% endunless %}
             </div>
         {% endif %}
-
+        {% comment %}
         <div class="footer__copyright">
             <p>&copy; {{ 'layout.footer.copyright' | t }} {{ 'now' | date: "%Y" }}  &middot;  {{ powered_by_link }}</p>
         </div>
+        {% endcomment %}
     </div>
 </footer>
