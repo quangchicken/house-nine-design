@@ -59,7 +59,9 @@
                 {% endif %}
             {% endif %}
             {% if section.settings.icon != blank %}
-
+                <picture>
+                    <img src="{{ block.settings.image | img_url: '1920x' }}" alt="" />
+                </picture>
             {% endif %}
         </div>
     </div>
