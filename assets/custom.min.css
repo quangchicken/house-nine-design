@@ -76,7 +76,8 @@ picture {
 .footer__newsletter-button {
   text-transform: uppercase;
   height: auto;
-  right: 0;
+  right: auto;
+  left: 100%;
   bottom: 0;
 }
 
