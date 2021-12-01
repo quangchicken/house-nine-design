@@ -79,6 +79,7 @@ picture {
   right: auto;
   left: 100%;
   bottom: 0;
+  padding: 0;
 }
 
 .footer__signup-text {
