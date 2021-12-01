@@ -219,7 +219,7 @@
         "settings": {
           "show_headings": true,
           "show_payment_icons": false,
-          "show_newsletter_signup": false,
+          "show_newsletter_signup": true,
           "newsletter_subheading": "Good things come to those who subscribe",
           "show_locale_selector": false,
           "show_currency_selector": false
