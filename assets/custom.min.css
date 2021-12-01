@@ -43,6 +43,10 @@ picture {
   opacity: 0;
 }
 
+.footer__signup-text {
+  margin: 0;
+}
+
 .slideshow .wrapper {
   overflow: hidden;
 }
