@@ -67,6 +67,10 @@ picture {
   opacity: 0;
 }
 
+.footer__newsletter .input:focus {
+  outline: none;
+}
+
 .footer__newsletter-button {
   text-transform: uppercase;
   height: auto;
