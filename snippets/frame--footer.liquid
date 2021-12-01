@@ -48,41 +48,6 @@
             </div>
             {% endif %}
         {% endfor %}
-
-        {% if show_newsletter_signup %}
-            <div class="footer__newsletter">
-                <h3 class="footer__col-title overline mt0 mb3"> {{ 'general.newsletter_form.title' | t }}</h3>
-
-                {% unless newsletter_subheading == blank %}
-                <div class="footer__signup-text mb3">
-                    {{ newsletter_subheading }}
-                </div>
-                {% endunless %}
-
-                <div class="footer__input-wrap">
-                {% form 'customer' %}
-                    {{ form.errors | default_errors }}
-                    {% if form.posted_successfully? %}
-                        <p>{{ 'general.newsletter_form.confirmation' | t }}</p>
-                    {% else %}
-                        <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter__input-container">
-                            <input type="email"
-                            class="input-reset input"
-                            name="contact[email]"
-                            id="Email"
-                            value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
-                            placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
-                            autocorrect="off"
-                            autocapitalize="off">
-                            <label class="label--above" for="Email">{{ 'general.newsletter_form.email_placeholder' | t }}</label>
-                            <button class="footer__newsletter-button">{% render 'icon-arrow-forward' %}</button>
-                        </div>
-                    {% endif %}
-                {% endform %}
-            </div>
-        </div>
-        {% endif %}
         </section>
 
         <hr class="footer__divider mt6-l mt5 mb3 b--solid b--default bb" style="border-top: 0; border-right: 0; border-left: 0;" />
