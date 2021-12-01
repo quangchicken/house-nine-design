@@ -70,7 +70,7 @@
     </div>
     {% endif %}
     
-    <div class="footer-bottom">
+    <div class="footer__bottom">
         <div class="footer__container">
             <div class="row">
                 <div class="footer__contact-mail">
@@ -92,7 +92,7 @@
                     {% endcomment %}
 
                     {% if block.type == 'link_list' and linklists[block.settings.menu].links.size > 0 %}
-                    <div class="row">
+                    <div class="inner">
                         {% comment %}
                         <h3 class="footer__col-title overline mt0 mb3">{{ linklists[block.settings.menu].title }}</h3>
                         {% endcomment %}
