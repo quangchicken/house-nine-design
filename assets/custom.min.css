@@ -29,7 +29,6 @@
 }
 
 .slideshow .owl-carousel .owl-dots .owl-dot {
-  display: inline-block;
   width: 10px;
   height: 10px;
   padding: 0;
