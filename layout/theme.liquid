@@ -29,6 +29,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="canonical" href="{{ canonical_url }}">
 
+  <script src="{{ 'jquery-3.2.1.min.js' | asset_url }}"></script>
+  <script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+  <script src="{{ 'custom.js' | asset_url }}"></script>
+
   {% if template contains 'customers' %}
       {{ "shopify_common.js" | shopify_asset_url | script_tag }}
       {{ "customer_area.js"  | shopify_asset_url | script_tag }}
@@ -65,6 +69,7 @@
 
   {% render 'theme-setup' %}
   {% render 'theme-setting-vars' %}
+  
   {{ 'index.css' | asset_url | stylesheet_tag }}
   {% render 'theme-liquid-css-assets' %}
   {{ 'custom.min.css' | asset_url | stylesheet_tag }}
