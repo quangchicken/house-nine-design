@@ -33,12 +33,12 @@
     "font_logo": "bauer_bodoni_n7",
     "logo_uppercase": false,
     "font_logo_size": 26,
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
     "social_twitter_link": "",
     "social_facebook_link": "",
-    "social_pinterest_link": "#",
+    "social_pinterest_link": "",
     "social_instagram_link": "",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
@@ -217,9 +217,9 @@
           "1602305412730"
         ],
         "settings": {
-          "show_headings": false,
+          "show_headings": true,
           "show_payment_icons": false,
-          "show_newsletter_signup": true,
+          "show_newsletter_signup": false,
           "newsletter_subheading": "Good things come to those who subscribe",
           "show_locale_selector": false,
           "show_currency_selector": false
