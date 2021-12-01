@@ -26,7 +26,13 @@
 
 @media only screen and (max-width: 959px) {
   .slideshow .owl-carousel {
-    max-width: 80%;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .slideshow .owl-carousel {
+    max-width: 100%;
   }
 }
 
