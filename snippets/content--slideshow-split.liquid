@@ -14,8 +14,18 @@
 
 {% assign show_nav_dots = true %}
 
-<section data-section-id="{{ section.id }}" data-section-type="slideshow-split" class="slideshow-split{{ modifiers }}" data-timer="{{ time_in_ms }}" data-slide-count={{ blocks.size }}
-        style=" --desktop-height: {{ desktop_height }}vh; --mobile-height: {{ mobile_height }}vh; --text-container-background: {{ text_container_color }};">
+<section
+    data-section-id="{{ section.id }}"
+    data-section-type="slideshow-split"
+    class="slideshow-split{{ modifiers }}"
+    data-timer="{{ time_in_ms }}"
+    data-slide-count={{ blocks.size }}
+    style="
+        --desktop-height: {{ desktop_height }}vh;
+        --mobile-height: {{ mobile_height }}vh;
+        --text-container-background: {{ text_container_color }};
+    "
+    >
     <div class="slideshow-split__underlay hide" style="background-color: {{ overlay_color }};"></div>
         <div class="slideshow-split__slideshow">
             {% if blocks.size == 2 %}
@@ -42,10 +52,9 @@
         {% render 'page-dots', blocks: blocks %}
         <div class="slideshow-split__overlay" style="background-color: {{ overlay_color | color_modify: 'alpha', proper_alpha }};"></div>
 
-        <div class="slideshow-split__content">
-            <div class="slideshow-split__content-inner animation__staggered-children-fade-in">
-                <div class="slideshow-split__content-inner-container">
-                {% if showOverlayCopy %}
+            <div class="slideshow-split__content">
+                <div class="slideshow-split__content-inner animation__staggered-children-fade-in">
+                    <div class="slideshow-split__content-inner-container">
                     {% if overline != blank %}
                         <h2
                             class="slideshow-split__overline overline"
@@ -71,21 +80,16 @@
                     {% endif %}
 
                     {%- if link != blank and link_text != blank -%}
-                        <a href="{{ link }}" class="slideshow-split__link bttn" data-theme-editor-setting="section.{{ id }}.link_text">
-                            {{ link_text }}
-                        </a>
-                    {%- endif -%}
-                {% endif %}
-                {% if icon != blank %}
-                    <div class="slideshow-icon">
-                        <picture>
-                            <source media="(min-width: 1024px)" srcset="{{ icon | img_url: '160x' }}">
-                            <source media="(min-width: 640px)" srcset="{{ icon | img_url: '160x' }}">
-                            <img loading="lazy" importance="low" src="{{ icon | img_url: '160x' }}" alt="" />
-                        </picture>
-                    </div>
-                {% endif %}
-            </div>
-        </div>
+                        <a
+        href="{{ link }}"
+        class="slideshow-split__link bttn"
+        data-theme-editor-setting="section.{{ id }}.link_text"
+        >
+        {{ link_text }}
+        </a>
+    {%- endif -%}
     </div>
+    </div>
+</div>
+
 </section>
