@@ -871,14 +871,14 @@
         "settings": {
           "custom_class": "",
           "show_underlay": false,
-          "color_underlay": "#fff",
+          "color_underlay": "#ffffff",
           "heading": "",
           "subheading": "HOUSE NINE DESIGN",
           "text": "",
           "button_link": "#",
           "button_text": "Contact Us",
           "icon": "shopify:\/\/shop_images\/H9_marks_cotton-04.png",
-          "image_height": 90
+          "image_height": 100
         }
       }
     },
