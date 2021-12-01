@@ -93,7 +93,7 @@
                     <h3 class="footer__col-title overline mt0 mb3">{{ linklists[block.settings.menu].title }}</h3>
                     {% endcomment %}
                     {% if linklists[block.settings.menu].links.size > 0 %}
-                    <ul class="list ma0 pa0">
+                    <ul class="list">
                         {% for link in linklists[block.settings.menu].links %}
                         <li class="list-item ma0"><a href="{{ link.url }}">{{ link.title }}</a></li>
                         {% endfor %}
