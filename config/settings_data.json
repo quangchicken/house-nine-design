@@ -367,6 +367,7 @@
       },
       "1602299175982": {
         "type": "slideshow-split--dynamic",
+        "disabled": true,
         "blocks": {
           "1602299175982-0": {
             "type": "slide",
