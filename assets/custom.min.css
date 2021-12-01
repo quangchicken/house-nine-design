@@ -29,7 +29,11 @@ picture {
   align-items: flex-end;
 }
 
-.footer__top-logo img {
+.footer__top-logo picture {
+  line-height: 1;
+}
+
+.footer__top-logo picture img {
   height: 40px;
 }
 
