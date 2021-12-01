@@ -409,7 +409,7 @@
           "link": "shopify:\/\/pages\/house-nine-projects",
           "link_text": "Contact Us",
           "icon": "shopify:\/\/shop_images\/H9_marks_cotton-04.png",
-          "overlay_copy": false,
+          "overlay_copy": true,
           "overlay_opacity": 0,
           "overlay_color": "#000000",
           "text_container_color": "rgba(0,0,0,0)",
