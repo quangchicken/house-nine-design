@@ -402,14 +402,11 @@
           "desktop_height": 100,
           "mobile_height": 100,
           "timer": 5,
-          "group_cell": 3,
           "overline": "House Nine Design",
           "title": "lorem ipsum",
           "subheading": "lorem ipsum",
           "link": "shopify:\/\/pages\/house-nine-projects",
           "link_text": "Contact Us",
-          "icon": "shopify:\/\/shop_images\/H9_marks_cotton-04.png",
-          "overlay_copy": true,
           "overlay_opacity": 0,
           "overlay_color": "#000000",
           "text_container_color": "rgba(0,0,0,0)",
@@ -872,11 +869,14 @@
         ],
         "settings": {
           "custom_class": "",
+          "show_underlay": false,
           "heading": "",
           "subheading": "",
           "text": "",
           "button_link": "",
-          "button_text": ""
+          "button_text": "",
+          "icon": "shopify:\/\/shop_images\/H9_wbmarks_forest-04.jpg",
+          "image_height": 100
         }
       }
     },
