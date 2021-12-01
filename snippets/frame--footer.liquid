@@ -15,84 +15,76 @@
   {% assign modifiers = modifiers | append: ' footer--hide-titles' %}
 {% endunless %}
 
-<footer
-  data-section-id="{{ id }}"
-  data-section-type="footer"
-  class="footer{{ modifiers }}"
->
-  <div class="footer__container">
+<footer data-section-id="{{ id }}" data-section-type="footer" class="footer{{ modifiers }}">
+    <div class="footer__top">
+
+    </div>
+    
+    <div class="footer__container">
 
     {% if blocks.size > 0 or show_newsletter_signup %}
-      <section class="footer__cols">
+        <section class="footer__cols">
         {% for block in blocks %}
-
-          {% if block.type == 'text' and block.settings.text != blank %}
+            {% if block.type == 'text' and block.settings.text != blank %}
             <div class="footer__col-text">
-              <h3 class="footer__col-title overline mt0 mb3">{{ block.settings.title }}</h3>
-              {% if block.settings.text %}
-                <div class="rte">
-                  {{ block.settings.text }}
-                </div>
-              {% endif %}
+                <h3 class="footer__col-title overline mt0 mb3">{{ block.settings.title }}</h3>
+                {% if block.settings.text %}
+                    <div class="rte">{{ block.settings.text }}</div>
+                {% endif %}
             </div>
-          {% endif %}
+            {% endif %}
 
-          {% if block.type == 'link_list' and linklists[block.settings.menu].links.size > 0 %}
+            {% if block.type == 'link_list' and linklists[block.settings.menu].links.size > 0 %}
             <div class="footer__col-list">
-              <h3 class="footer__col-title overline mt0 mb3">{{ linklists[block.settings.menu].title }}</h3>
-              {% if linklists[block.settings.menu].links.size > 0 %}
+                <h3 class="footer__col-title overline mt0 mb3">{{ linklists[block.settings.menu].title }}</h3>
+                {% if linklists[block.settings.menu].links.size > 0 %}
                 <ul class="list ma0 pa0">
-                  {% for link in linklists[block.settings.menu].links %}
+                    {% for link in linklists[block.settings.menu].links %}
                     <li class="list-item ma0"><a href="{{ link.url }}">{{ link.title }}</a></li>
-                  {% endfor %}
+                    {% endfor %}
                 </ul>
-              {% endif %}
+                {% endif %}
             </div>
-          {% endif %}
-
+            {% endif %}
         {% endfor %}
 
         {% if show_newsletter_signup %}
-          <div class="footer__newsletter">
-            <h3 class="footer__col-title overline mt0 mb3"> {{ 'general.newsletter_form.title' | t }}</h3>
+            <div class="footer__newsletter">
+                <h3 class="footer__col-title overline mt0 mb3"> {{ 'general.newsletter_form.title' | t }}</h3>
 
-            {% unless newsletter_subheading == blank %}
-              <div class="footer__signup-text mb3">
-                {{ newsletter_subheading }}
-              </div>
-            {% endunless %}
+                {% unless newsletter_subheading == blank %}
+                <div class="footer__signup-text mb3">
+                    {{ newsletter_subheading }}
+                </div>
+                {% endunless %}
 
-            <div class="footer__input-wrap">
-
-              {% form 'customer' %}
-                {{ form.errors | default_errors }}
-                {% if form.posted_successfully? %}
-                  <p>{{ 'general.newsletter_form.confirmation' | t }}</p>
-                {% else %}
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <div class="newsletter__input-container">
-                    <input type="email"
-                      class="input-reset input"
-                      name="contact[email]"
-                      id="Email"
-                      value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
-                      placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
-                      autocorrect="off"
-                      autocapitalize="off">
-                      <label class="label--above" for="Email">{{ 'general.newsletter_form.email_placeholder' | t }}</label>
-                      <button class="footer__newsletter-button">
-                        {% render 'icon-arrow-forward' %}
-                      </button>
-                  </div>
-                {% endif %}
-              {% endform %}
-
+                <div class="footer__input-wrap">
+                {% form 'customer' %}
+                    {{ form.errors | default_errors }}
+                    {% if form.posted_successfully? %}
+                        <p>{{ 'general.newsletter_form.confirmation' | t }}</p>
+                    {% else %}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter__input-container">
+                            <input type="email"
+                            class="input-reset input"
+                            name="contact[email]"
+                            id="Email"
+                            value="{% if customer.email != blank %}{{ customer.email }}{% endif %}"
+                            placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                            autocorrect="off"
+                            autocapitalize="off">
+                            <label class="label--above" for="Email">{{ 'general.newsletter_form.email_placeholder' | t }}</label>
+                            <button class="footer__newsletter-button">{% render 'icon-arrow-forward' %}</button>
+                        </div>
+                    {% endif %}
+                {% endform %}
             </div>
-          </div>
+        </div>
         {% endif %}
-      </section>
+        </section>
 
-      <hr class="footer__divider mt6-l mt5 mb3 b--solid b--default bb" style="border-top: 0; border-right: 0; border-left: 0;" />
+        <hr class="footer__divider mt6-l mt5 mb3 b--solid b--default bb" style="border-top: 0; border-right: 0; border-left: 0;" />
     {% endif %}
 
 
