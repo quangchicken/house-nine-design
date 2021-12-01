@@ -37,6 +37,10 @@ picture {
   align-items: flex-end;
 }
 
+.footer__newsletter input::placeholder {
+  opacity: 0;
+}
+
 .slideshow .wrapper {
   overflow: hidden;
 }
