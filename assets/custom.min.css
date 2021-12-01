@@ -1,10 +1,10 @@
-@media only screen and (max-width: 989px) {
+@media only screen and (max-width: 959px) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 960px) {
   .hide-for-desktop {
     display: none;
   }
