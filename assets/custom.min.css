@@ -123,6 +123,10 @@ picture {
   margin-right: 15px;
 }
 
+.footer__menu {
+  margin-left: auto;
+}
+
 .footer__menu .list {
   margin: 0;
   padding: 0;
