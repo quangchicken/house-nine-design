@@ -74,7 +74,7 @@
         <div class="footer__container">
 
         {% if blocks.size > 0 %}
-            <section class="footer__cols">
+            <div class="footer__cols">
             {% for block in blocks %}
                 {% if block.type == 'text' and block.settings.text != blank %}
                 <div class="footer__col-text">
@@ -100,7 +100,7 @@
                 </div>
                 {% endif %}
             {% endfor %}
-            </section>
+            </div>
             <!-- <hr class="footer__divider mt6-l mt5 mb3 b--solid b--default bb" style="border-top: 0; border-right: 0; border-left: 0;" /> -->
         {% endif %}
         {% comment %}
