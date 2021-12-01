@@ -68,7 +68,7 @@
 
 
 {% style %}
-.color_underlay{
+.slideshow__underlay{
     color: {{ section.settings.color_underlay }};
 }
 .slideshow__block .inner img{
@@ -114,7 +114,8 @@ jQuery(document).ready(function () {
         {
             "type": "color",
             "id": "color_underlay",
-            "label": "Color underlay"
+            "label": "Color underlay",
+            "default": "#fff"
         },
         {
             "type": "text",
