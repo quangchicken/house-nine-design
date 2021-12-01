@@ -17,12 +17,13 @@
 
 <footer data-section-id="{{ id }}" data-section-type="footer" class="footer{{ modifiers }}">
     <div class="footer__top">
-
+        {% if show_newsletter_signup %}
+        {% endif %}
     </div>
     
     <div class="footer__container">
 
-    {% if blocks.size > 0 or show_newsletter_signup %}
+    {% if blocks.size > 0 %}
         <section class="footer__cols">
         {% for block in blocks %}
             {% if block.type == 'text' and block.settings.text != blank %}
