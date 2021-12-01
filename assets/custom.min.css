@@ -43,6 +43,10 @@ picture {
   opacity: 0;
 }
 
+.footer__newsletter-button {
+  text-transform: uppercase;
+}
+
 .footer__signup-text {
   margin: 0;
   width: auto;
