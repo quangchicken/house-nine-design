@@ -154,6 +154,12 @@ picture {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 959px) {
+  .footer__menu .list {
+    display: block;
+  }
+}
+
 .footer__menu .list li {
   margin-right: 15px;
   text-transform: uppercase;
@@ -163,6 +169,10 @@ picture {
 
 .footer__menu .list li:last-child {
   margin-right: 0;
+}
+
+.footer__menu .list li:hover {
+  opacity: 0.5;
 }
 
 .slideshow .wrapper {
