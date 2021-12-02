@@ -1,8 +1,6 @@
 jQuery(window).scroll(function(){
     if (jQuery(window).scrollTop() > 105){
-        jQuery('.collection-header').addClass( "scroll");
-        maxHeightFilter = jQuery(window).height() - (jQuery('.collection-header').height() + 140);
-        jQuery('.boost-pfs-filter-left-col .boost-pfs-filter-tree').css("max-height", maxHeightFilter);
+        
     }else{
         jQuery('.collection-header').removeClass( "scroll");
         jQuery('.boost-pfs-filter-left-col .boost-pfs-filter-tree').css("max-height", maxHeightFilter);
