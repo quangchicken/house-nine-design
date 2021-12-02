@@ -1,5 +1,5 @@
 function headerSticky() {
-    var header = jQuery('section.shopify-section:first-of-type >div'),
+    var container = jQuery('.header-container'),
         i = jQuery('#shopify-section-header'),
         //point = i.height(),
         point = 0;
