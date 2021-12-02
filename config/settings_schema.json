@@ -508,7 +508,7 @@
       {
         "type": "text",
         "id": "contact_support_phone",
-        "default": "(833) 442-3453",
+        "default": "+44 208-962-9918",
         "label": "Contact phone"
       },
       {
