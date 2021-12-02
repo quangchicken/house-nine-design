@@ -40,7 +40,6 @@ h2 {
 }
 
 .header.header--default.header--alignment-left .header__logo-wrapper {
-  height: 100%;
   max-height: 105px;
   transition: max-height 0.15s ease-out;
 }
@@ -135,7 +134,7 @@ h2 {
 }
 
 .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper {
-  min-height: 60px;
+  max-height: 60px;
 }
 
 .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper .header__logo-image {
