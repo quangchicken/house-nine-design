@@ -58,7 +58,7 @@ endif
 window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
 </script>
 
-<section data-component="header" data-section-id="{{ id }}" data-section-type="header" class="header {% unless header_is_transparent %}bg-base {% endunless %} w-100 z-5" data-navigation='
+<section data-component="header" data-section-id="{{ id }}" data-section-type="header" class="{% unless header_is_transparent %}bg-base {% endunless %} w-100 z-5" data-navigation='
     [
     {%- for link in links -%}
         {
@@ -111,19 +111,17 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
 <div id="header" class="header {{ modifiers }}" data-transparent-header="{{ header_is_transparent }}">
     <div class="header__content">
         <div class="flex justify-between w-100" data-primary-navigation="yes">
-            <div class="header__nav-left">
-                <nav class="header__nav">
-                    {%
-                        render 'navmenu' with
-                        menu: menu_left,
-                        depth: 1,
-                        max_depth: 3,
-                        blocks: section.blocks,
-                        top_level: true,
-                        has_triggers: true
-                    %}
-                </nav>
-            </div>
+            <nav class="header__nav">
+                {%
+                    render 'navmenu' with
+                    menu: menu_left,
+                    depth: 1,
+                    max_depth: 3,
+                    blocks: section.blocks,
+                    top_level: true,
+                    has_triggers: true
+                %}
+            </nav>
             <div class="no-js-menu no-js-menu--desktop">
                 {% render 'no-js-navmenu' with menu: menu %}
             </div>
@@ -151,7 +149,7 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                 </a>
             </h1>
 
-            <div class="header__icon-wrapper header__nav-right">
+            <div class="header__icon-wrapper">
                 <nav class="header__nav">
                     {%
                         render 'navmenu' with
