@@ -1,5 +1,5 @@
 function headerSticky() {
-    var container = jQuery('section.shopify-section:first-of-type >div'),
+    var header = jQuery('section.shopify-section:first-of-type >div'),
         i = jQuery('#shopify-section-header'),
         //point = i.height(),
         point = 0;
@@ -8,3 +8,5 @@ function headerSticky() {
     // }
     container.css('padding-top', i.height());
 }
+
+jQuery(window).on('scroll', headerSticky);
