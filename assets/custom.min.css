@@ -64,12 +64,12 @@ h2 {
 }
 
 .header__nav .nav.nav--depth-1 .nav__item {
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 @media only screen and (min-width: 1150px) {
   .header__nav .nav.nav--depth-1 .nav__item {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 
