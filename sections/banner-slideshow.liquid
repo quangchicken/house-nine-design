@@ -18,17 +18,6 @@
                                 <source media="(min-width: 1280px)" srcset="{{ block.settings.image | img_url: '1920x' }}">
                                 <source media="(min-width: 900px)" srcset="{{ block.settings.image | img_url: '1280x' }}">
                                 <source media="(min-width: 768px)" srcset="{{ block.settings.image | img_url: '900x' }}">
-                                <source media="(min-width: 640px)" srcset="{{ block.settings.mobile_image | img_url: '768x' }}">
-                                {% if block.settings.mobile_image != blank %}
-                                <source media="(min-width: 480px)" srcset="{{ block.settings.mobile_image | img_url: '640x' }}">
-                                {% else %}
-                                <source media="(min-width: 480px)" srcset="{{ block.settings.image | img_url: '640x', crop: 'center' }}">
-                                {% endif %}
-                                {% if block.settings.mobile_image != blank %}
-                                <source srcset="{{ block.settings.mobile_image | img_url: '480x' }}">
-                                {% else %}
-                                <source srcset="{{ block.settings.image | img_url: '480x', crop: 'center' }}">
-                                {% endif %}
                                 <img src="{{ block.settings.image | img_url: '1920x' }}" alt="" />
                             </picture>
                         {% else %}
@@ -75,7 +64,7 @@
 }
 .slideshow__block .inner img{
     height: 100vh;
-    max-height: calc({{ section.settings.image_height }}vh - 65px);
+    max-height: calc({{ section.settings.image_height }}vh - 105px);
     object-fit: cover;
     object-position: center;
 }
