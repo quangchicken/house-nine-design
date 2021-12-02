@@ -89,12 +89,14 @@ h2 {
 @media only screen and (min-width: 960px) {
   .header__nav .nav.nav--depth-1 .nav__item-primary {
     font-size: 12px;
+    letter-spacing: 2px;
   }
 }
 
 @media only screen and (min-width: 1150px) {
   .header__nav .nav.nav--depth-1 .nav__item-primary {
     font-size: 15px;
+    letter-spacing: 3px;
   }
 }
 
