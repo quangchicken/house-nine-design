@@ -150,6 +150,17 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
             </h1>
 
             <div class="header__icon-wrapper">
+                <nav class="header__nav">
+                    {%
+                        render 'navmenu' with
+                        menu: menu,
+                        depth: 1,
+                        max_depth: 3,
+                        blocks: section.blocks,
+                        top_level: true,
+                        has_triggers: true
+                    %}
+                </nav>
                 <ul class="header__icon-list">
                     {% if locale_selector %}
                     <li class="header__icon header__icon--language">
