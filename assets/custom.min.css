@@ -42,6 +42,12 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 960px) {
+  .header.header--default.header--alignment-left .header__logo-wrapper .header__logo-image {
+    width: 220px;
+  }
+}
+
 .header__nav .nav.nav--depth-1 .nav__item {
   margin-right: 15px;
 }
