@@ -111,17 +111,19 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
 <div id="header" class="header {{ modifiers }}" data-transparent-header="{{ header_is_transparent }}">
     <div class="header__content">
         <div class="flex justify-between w-100" data-primary-navigation="yes">
-            <nav class="header__nav">
-                {%
-                    render 'navmenu' with
-                    menu: menu_left,
-                    depth: 1,
-                    max_depth: 3,
-                    blocks: section.blocks,
-                    top_level: true,
-                    has_triggers: true
-                %}
-            </nav>
+            <div class="header__nav-left">
+                <nav class="header__nav">
+                    {%
+                        render 'navmenu' with
+                        menu: menu_left,
+                        depth: 1,
+                        max_depth: 3,
+                        blocks: section.blocks,
+                        top_level: true,
+                        has_triggers: true
+                    %}
+                </nav>
+            </div>
             <div class="no-js-menu no-js-menu--desktop">
                 {% render 'no-js-navmenu' with menu: menu %}
             </div>
