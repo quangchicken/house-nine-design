@@ -66,6 +66,10 @@ h2 {
   margin-left: 30px;
 }
 
+.header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list .quick-cart__indicator:hover {
+  border: none !important;
+}
+
 .header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list .quick-cart__indicator svg {
   width: 25px;
 }
