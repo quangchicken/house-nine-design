@@ -70,7 +70,10 @@ h2 {
   position: absolute;
   top: 25px;
   right: 30px;
+  height: 16px;
+  width: 14px;
   background-color: #000000;
+  font-weight: 500px;
   color: #fff;
 }
 
