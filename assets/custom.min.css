@@ -304,6 +304,7 @@ h2 {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   line-height: 1;
+  letter-spacing: 3px;
   transition: opacity .25s ease-in-out;
 }
 
