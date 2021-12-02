@@ -76,6 +76,8 @@ h2 {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   font-weight: 400;
+  height: auto;
+  line-height: 1.2;
 }
 
 .header.header--default.header--alignment-left .header__icon-wrapper .header__nav {
