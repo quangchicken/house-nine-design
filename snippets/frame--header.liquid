@@ -161,7 +161,7 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                         has_triggers: true
                     %}
                 </nav>
-                {% comment %}
+                
                 <ul class="header__icon-list">
                     {% if locale_selector %}
                     <li class="header__icon header__icon--language">
@@ -198,6 +198,7 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                             <div class="quick-cart__icon">
                                 <a href="{{ routes.cart_url }}" class="quick-cart__trigger color-inherit js-cart-drawer-toggle">
                                     <div class="quick-cart__indicator js-cart-count">
+                                        {% render 'icon-cart' %}
                                         <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">
                                         {{ cart.item_count }}
                                         </span>
@@ -205,8 +206,7 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                                 </a>
                             </div>
                         </li>
-                    </ul>
-                    {% endcomment %}
+                </ul>    
                 </div>
             </div>
         </div>
