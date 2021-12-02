@@ -33,6 +33,10 @@ h2 {
   font-weight: 400;
 }
 
+.header.header--default.header--alignment-left .header__icon-wrapper .header__nav {
+  justify-content: flex-end;
+}
+
 .footer {
   padding: 0;
 }
