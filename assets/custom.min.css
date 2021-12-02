@@ -9,6 +9,12 @@ h1 {
   font-family: "Cardo", serif;
 }
 
+h2 {
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-family: "Cardo", serif;
+}
+
 @media only screen and (max-width: 959px) {
   .hide-for-mobile {
     display: none;
