@@ -501,5 +501,28 @@
         "info": "Will be scaled down to 32x32px"
       }
     ]
+  },
+  {
+    "name": "Contact mail",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact_support_phone",
+        "default": "(833) 442-3453",
+        "label": "t:settings_schema.contact_support.settings.contact_support_phone.label"
+      },
+      {
+        "type": "text",
+        "id": "contact_support_address",
+        "default": "3016 VEnergy Drive<br>Brookshire TX 77423",
+        "label": "t:settings_schema.contact_support.settings.contact_support_address.label"
+      },
+      {
+        "type": "text",
+        "id": "contact_support_email",
+        "default": "support@aegleco.com",
+        "label": "t:settings_schema.contact_support.settings.contact_support_email.label"
+      }
+    ]
   }
 ]
