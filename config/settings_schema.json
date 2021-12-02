@@ -509,7 +509,7 @@
         "type": "text",
         "id": "contact_support_phone",
         "default": "(833) 442-3453",
-        "label": "t:settings_schema.contact_support.settings.contact_support_phone.label"
+        "label": "Contact mail"
       },
       {
         "type": "text",
