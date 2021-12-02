@@ -1,6 +1,6 @@
 function headerSticky() {
     var container = jQuery('.header-container');
-    if (jQuery(window).scrollTop()){
+    if (jQuery(window).scrollTop() >= 60){
         if(!container.hasClass('scroll')){
             container.addClass('scroll');
         }
