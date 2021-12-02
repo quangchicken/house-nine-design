@@ -161,7 +161,6 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                         has_triggers: true
                     %}
                 </nav>
-                
                 <ul class="header__icon-list">
                     {% if locale_selector %}
                     <li class="header__icon header__icon--language">
@@ -209,14 +208,14 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                             </a>
                         </div>
                     </li>
-                </ul>    
-                </div>
+                </ul> 
             </div>
         </div>
-        <div class="no-js-menu no-js-menu--mobile">
-            {% render 'no-js-navmenu' with menu: menu %}
-        </div>
     </div>
+    <div class="no-js-menu no-js-menu--mobile">
+        {% render 'no-js-navmenu' with menu: menu %}
+    </div>
+</div>
 </section>
 
 {% assign proper_alpha = transparent_header_border_opacity | divided_by: 100.00 %}
