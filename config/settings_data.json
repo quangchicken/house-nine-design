@@ -875,7 +875,7 @@
         ],
         "settings": {
           "custom_class": "",
-          "show_underlay": true,
+          "show_underlay": false,
           "color_underlay": "#ffffff",
           "heading": "",
           "subheading": "HOUSE NINE DESIGN",
