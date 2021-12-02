@@ -9,7 +9,7 @@
 //     }
 // }
 
-jQuery(window).on('scroll', headerSticky);
+// jQuery(window).on('scroll', headerSticky);
 
 jQuery(window).scroll(function(){
     var container = jQuery('.header-container');
