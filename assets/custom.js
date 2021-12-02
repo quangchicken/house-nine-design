@@ -6,6 +6,11 @@ function headerSticky() {
     //     container.css('padding-top', i.height());
     // }
     container.addClass('scroll');
+    if (jQuery(window).scrollTop() > 105){
+        container.addClass('scroll');
+    } else{
+        container.removeClass('scroll');
+    }
 }
 
 jQuery(window).on('scroll', headerSticky);
