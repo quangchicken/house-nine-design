@@ -168,18 +168,20 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                         {% render 'header-language-selector' %}
                     </li>
                     {% endif %}
+
                     {% if currency_selector %}
                     <li class="header__icon header__icon--currency">
                         {% render 'header-currency-selector' %}
                     </li>
                     {% endif %}
+
                     <li class="header__icon header__icon--search">
                         <noscript>
-                        <a href="{{ routes.search_url }}" class="color-inherit">
-                        <div class="relative">
-                            {{ 'layout.navigation.search' | t }}
-                        </div>
-                        </a>
+                            <a href="{{ routes.search_url }}" class="color-inherit">
+                                <div class="relative">
+                                    {{ 'layout.navigation.search' | t }}
+                                </div>
+                            </a>
                         </noscript>
                         {% render 'quick-search' %}
                     </li>
@@ -194,18 +196,19 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                             </a>
                         </li>
                     {%- endif -%}
-                        <li class="header__icon header__icon--cart">
-                            <div class="quick-cart__icon">
-                                <a href="{{ routes.cart_url }}" class="quick-cart__trigger color-inherit js-cart-drawer-toggle">
-                                    <div class="quick-cart__indicator js-cart-count">
-                                        {% render 'icon-cart' %}
-                                        <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">
+
+                    <li class="header__icon header__icon--cart">
+                        <div class="quick-cart__icon">
+                            <a href="{{ routes.cart_url }}" class="quick-cart__trigger color-inherit js-cart-drawer-toggle">
+                                <div class="quick-cart__indicator js-cart-count">
+                                {% render 'icon-cart' %}
+                                    <span class="quick-cart__indicator-inner{% if cart.item_count > 0 %} quick-cart--cart-has-item{% endif %}">
                                         {{ cart.item_count }}
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
                 </ul>    
                 </div>
             </div>
