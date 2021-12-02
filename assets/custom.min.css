@@ -66,6 +66,12 @@ h2 {
   margin-left: 30px;
 }
 
+.header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list .quick-cart__indicator-inner {
+  position: absolute;
+  background-color: #000000;
+  color: #fff;
+}
+
 .footer {
   padding: 0;
 }
