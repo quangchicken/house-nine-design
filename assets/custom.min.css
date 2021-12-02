@@ -122,6 +122,25 @@ h2 {
   color: #fff;
 }
 
+@media only screen and (min-width: 960px) {
+  .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper {
+    flex: 0 !important;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper .header__logo-image {
+    width: 165px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper .header__logo-image {
+    width: 220px;
+  }
+}
+
 .footer {
   padding: 0;
 }
