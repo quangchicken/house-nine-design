@@ -37,6 +37,11 @@ h2 {
   justify-content: flex-end;
 }
 
+.header.header--default.header--alignment-left .header__icon-wrapper .header__nav .nav {
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   padding: 0;
 }
