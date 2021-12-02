@@ -1,0 +1,105 @@
+#header{
+    padding: 0;
+    .header__content{
+        max-width: 1920px;
+    }
+}
+.header{
+    border: none;
+    &.header--default.header--alignment-left .header__logo-wrapper{
+        height: 105px;
+        transition: height 0.15s ease-out;
+        @media #{$breakpoint-wide} {
+            flex: 0 !important;
+            padding: 0 20px;
+        }
+        .header__logo-image{
+            @media #{$breakpoint-wide} {
+                width: 165px;
+            }
+            @media #{$breakpoint-wider} {
+                width: 220px;
+            }
+        }
+    }
+    &__nav{
+        .nav.nav--depth-1{
+            .nav__item{
+                margin-right: 12px;
+                @media #{$breakpoint-wider} {
+                    margin-right: 20px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            .nav__item-primary{
+                text-transform: uppercase;
+                font-family: $title-font;
+                font-weight: 400;
+                height: auto;
+                line-height: 1.2;
+                letter-spacing: 3px;
+                color: $title-colour;
+                @media #{$breakpoint-wide} {
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                }
+                @media #{$breakpoint-wider} {
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+    &.header--default.header--alignment-left .header__icon-wrapper{
+        .header__nav{
+            justify-content: flex-end;
+            .nav{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .header__icon-list{
+            margin-left: 15px;
+            @media #{$breakpoint-wider} {
+                margin-left: 30px;
+            }
+            .quick-cart__trigger{
+                height: auto;
+            }
+            .quick-cart__indicator{
+                position: relative;
+                &:hover{
+                    border: none !important;
+                }
+                svg{
+                    width: 25px;
+                }
+                &-inner{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 16px;
+                    width: auto;
+                    padding: 0 2px;
+                    background-color: $title-colour;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.header-container.is-sticky{
+    .header{
+        &.header--default.header--alignment-left .header__logo-wrapper{
+            height: 60px;
+            .header__logo-image{
+                width: 165px;
+            }
+        }
+    }
+}

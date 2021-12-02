@@ -1,0 +1,20 @@
+$title-font: 'Karla', sans-serif;
+$body-font: 'Cardo', serif;
+
+$title-colour: #332E26;
+
+picture{
+    display: block;
+    font-size: 0;
+}
+
+h1{
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-family: $body-font;
+}
+h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: $title-font;
+}

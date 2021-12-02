@@ -1,0 +1,28 @@
+// Min Breakpoints
+$breakpoint-375: "only screen and (min-width: 375px)"; // > 375px
+$breakpoint-smallest: "only screen and (min-width: 448px)"; // > 448px
+$breakpoint-small: "only screen and (min-width: 480px)"; // > 576px
+$breakpoint-medium: "only screen and (min-width: 770px)"; // > 770px
+$breakpoint-wide: "only screen and (min-width: 960px)"; // > 990px
+$breakpoint-wider: "only screen and (min-width: 1150px)"; // > 1150px
+ 
+// Max Breakpoints
+$breakpoint-max-375: "only screen and (max-width: 375px)"; // < 375px
+$breakpoint-max-smallest: "only screen and (max-width: 448px)"; // < 448px
+$breakpoint-max-small: "only screen and (max-width: 479px)"; // < 575px
+$breakpoint-max-medium: "only screen and (max-width: 769px)"; // < 769px
+$breakpoint-max-wide: "only screen and (max-width: 959px)"; // > 989px
+
+$breakpoint-mobile: $breakpoint-max-wide;
+$breakpoint-desktop: $breakpoint-wide;
+
+.hide-for-mobile{
+    @media #{$breakpoint-mobile}{
+        display: none;
+    } 
+}
+.hide-for-desktop{
+    @media #{$breakpoint-desktop}{
+        display: none;
+    }
+}

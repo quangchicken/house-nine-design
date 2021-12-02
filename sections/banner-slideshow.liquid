@@ -1,0 +1,188 @@
+<link rel="stylesheet" href="{{ 'owl.theme.default.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'owl.carousel.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'owl.theme.default.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'owl.carousel.css' | asset_url | stylesheet_tag }}</noscript>
+
+{% if section.blocks.size > 0 %}
+<div class="banner slideshow">
+    <div class="wrapper">
+        <div class="row">
+            <div class="owl-carousel">
+                {% for block in section.blocks %}
+                <div class="slideshow__block">
+                    <div class="inner">
+                        {% if block.settings.link != blank %}<a class="img" href="{{ block.settings.link }}">{% endif %}
+                        {% if block.settings.image %}
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="{{ block.settings.image | img_url: '1920x' }}">
+                                <source media="(min-width: 900px)" srcset="{{ block.settings.image | img_url: '1280x' }}">
+                                <source media="(min-width: 768px)" srcset="{{ block.settings.image | img_url: '900x' }}">
+                                <img src="{{ block.settings.image | img_url: '1920x' }}" alt="" />
+                            </picture>
+                        {% else %}
+                            <span class="placeholder-background">
+                                {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+                                {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                            </span>
+                        {% endif %}
+                        {% if block.settings.link != blank %}</a>{% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="slideshow__underlay">
+            {% if section.settings.show_underlay %}
+                {% if section.settings.subheading != blank %}
+                <h4 class="slideshow__underlay-subheading">{{ section.settings.subheading }}</h4>
+                {% endif %}
+                {% if section.settings.heading != blank %}
+                <h2 class="slideshow__underlay-heading">{{ section.settings.heading }}</h2>
+                {% endif %}
+                {% if section.settings.text != blank %}
+                <p class="slideshow__underlay-text">{{ section.settings.text }}</p>
+                {% endif %}
+                {% if section.settings.button_link != blank or section.settings.button_text != blank %}
+                    <a href="{{ section.settings.button_link }}" class="slideshow__underlay-button bttn">{{ section.settings.button_text }}</a>
+                {% endif %}
+            {% endif %}
+            {% if section.settings.icon != blank %}
+                <picture>
+                    <img src="{{ section.settings.icon | img_url: '150x' }}" alt="" />
+                </picture>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% style %}
+.slideshow__underlay{
+    color: {{ section.settings.color_underlay }};
+}
+.slideshow__block .inner img{
+    height: 100vh;
+    max-height: calc({{ section.settings.image_height }}vh - 105px);
+    object-fit: cover;
+    object-position: center;
+}
+{% endstyle %}
+
+{% javascript %}
+jQuery(document).ready(function () {
+    if (jQuery('.slideshow .owl-carousel').length) {
+        jQuery('.slideshow .owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            autoplaySpeed: 6000,
+            autoplayHoverPause: false,
+        });
+    }
+});
+{% endjavascript %} 
+
+{% schema %}
+{
+    "name": "Banner - Slideshow",
+    "max_blocks": 10,
+    "settings": [
+        {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom class"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_underlay",
+            "label": "Show underlay"
+        },
+        {
+            "type": "color",
+            "id": "color_underlay",
+            "label": "Color underlay",
+            "default": "#fff"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+        },
+        {
+            "type": "range",
+            "id": "image_height",
+            "label": "Image Height",
+            "unit": "vh",
+            "min": 20,
+            "max": 100,
+            "step": 10,
+            "default": 100
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Banner",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "Image Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Banner - Slideshow",
+            "category": "Banner",
+            "blocks": [
+                {
+                    "type": "image"
+                },
+                {
+                    "type": "image"
+                },
+                {
+                    "type": "image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
