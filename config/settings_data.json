@@ -160,7 +160,7 @@
         ],
         "settings": {
           "header_style": "default",
-          "nav_alignment": "right",
+          "nav_alignment": "left",
           "detect_menu_length": false,
           "show_locale_selector": false,
           "show_currency_selector": false,
