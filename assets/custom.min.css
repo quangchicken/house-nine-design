@@ -15,6 +15,11 @@ picture {
   }
 }
 
+.header__nav .nav__item-primary {
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+}
+
 .footer {
   padding: 0;
 }
@@ -104,7 +109,7 @@ picture {
   left: 100%;
   bottom: -10px;
   padding: 0;
-  font-family: "karla_n4", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .footer__bottom {
@@ -125,7 +130,7 @@ picture {
 
 .footer__contact-mail h2 {
   margin: 0;
-  font-family: "karla_n4", sans-serif;
+  font-family: "Karla", sans-serif;
   line-height: 1;
   margin-right: 15px;
   font-size: 16px;
@@ -163,7 +168,7 @@ picture {
 .footer__menu .list li {
   margin-right: 15px;
   text-transform: uppercase;
-  font-family: "karla_n4", sans-serif;
+  font-family: "Karla", sans-serif;
   line-height: 1;
 }
 
