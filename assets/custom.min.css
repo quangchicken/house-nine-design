@@ -69,7 +69,13 @@ h2 {
 }
 
 .header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list {
-  margin-left: 30px;
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 1150px) {
+  .header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list {
+    margin-left: 30px;
+  }
 }
 
 .header.header--default.header--alignment-left .header__icon-wrapper .header__icon-list .quick-cart__indicator:hover {
