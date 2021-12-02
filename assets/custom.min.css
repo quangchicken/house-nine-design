@@ -208,6 +208,7 @@ h2 {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   line-height: 1;
+  transition: opacity .25s ease-in-out;
 }
 
 @media only screen and (max-width: 769px) {
