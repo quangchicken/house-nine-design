@@ -515,13 +515,13 @@
         "type": "text",
         "id": "contact_support_address",
         "default": "3016 VEnergy Drive<br>Brookshire TX 77423",
-        "label": "t:settings_schema.contact_support.settings.contact_support_address.label"
+        "label": "Contact address"
       },
       {
         "type": "text",
         "id": "contact_support_email",
         "default": "support@aegleco.com",
-        "label": "t:settings_schema.contact_support.settings.contact_support_email.label"
+        "label": "Contact email"
       }
     ]
   }
