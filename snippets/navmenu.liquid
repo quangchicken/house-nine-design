@@ -16,7 +16,6 @@
 
     <ul class="list ma0 pa0 lh-copy {{ menu_text_color }} {{ navmenu_classes | strip_newlines }}" {% if has_triggers and is_submenu %}data-nav-submenu{% endif %}>
     {% for link in list %}
-
         {% assign d = depth | plus: 1 %}
         {% assign show_meganav = false %}
         {% assign link_is_parent = false %}
@@ -46,12 +45,12 @@
             {% else %}
                 {% assign link_is_parent = true %}
 
-      {%- capture navmenu_item_classes -%}
-        nav__item
-        nav__item-parent
-        nav__item-id-{{ link.handle }}
-        {% if show_meganav %}nav__item-parent--meganav{% endif %}
-      {%- endcapture -%}
+        {%- capture navmenu_item_classes -%}
+            nav__item
+            nav__item-parent
+            nav__item-id-{{ link.handle }}
+            {% if show_meganav %}nav__item-parent--meganav{% endif %}
+        {%- endcapture -%}
 
       {%- capture nav_link_classes -%}
         nav__link
