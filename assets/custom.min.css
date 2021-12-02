@@ -35,6 +35,10 @@ h2 {
   max-width: 1920px;
 }
 
+.header {
+  border: none;
+}
+
 @media only screen and (min-width: 960px) {
   .header.header--default.header--alignment-left .header__logo-wrapper {
     flex: 0 !important;
