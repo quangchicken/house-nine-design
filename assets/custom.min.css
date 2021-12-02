@@ -132,6 +132,10 @@ h2 {
   color: #fff;
 }
 
+.header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper {
+  height: 60px;
+}
+
 .header-container.is-sticky .header.header--default.header--alignment-left .header__logo-wrapper .header__logo-image {
   width: 165px;
 }
