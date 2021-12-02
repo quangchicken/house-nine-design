@@ -35,8 +35,10 @@ h2 {
   max-width: 1920px;
 }
 
-.header__logo-wrapper {
-  flex: 0 !important;
+@media only screen and (min-width: 960px) {
+  .header.header--default.header--alignment-left .header__logo-wrapper {
+    flex: 0 !important;
+  }
 }
 
 .header__nav .nav.nav--depth-1 .nav__item {
