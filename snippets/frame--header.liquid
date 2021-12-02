@@ -58,7 +58,7 @@ endif
 window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
 </script>
 
-<section data-component="header" data-section-id="{{ id }}" data-section-type="header" class="{% unless header_is_transparent %}bg-base {% endunless %} w-100 z-5" data-navigation='
+<section data-component="header" data-section-id="{{ id }}" data-section-type="header" class="header {% unless header_is_transparent %}bg-base {% endunless %} w-100 z-5" data-navigation='
     [
     {%- for link in links -%}
         {
