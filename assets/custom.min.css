@@ -31,15 +31,15 @@ h2 {
   padding: 30px 0;
 }
 
-.header__nav .nav__item {
+.header__nav .nav.nav--depth-1__item {
   margin-right: 30px;
 }
 
-.header__nav .nav__item:last-child {
+.header__nav .nav.nav--depth-1__item:last-child {
   margin-right: 0;
 }
 
-.header__nav .nav__item-primary {
+.header__nav .nav.nav--depth-1__item-primary {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   font-weight: 400;
