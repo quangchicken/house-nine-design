@@ -39,7 +39,7 @@ h2 {
   border: none;
 }
 
-.header.header--default.header--alignment-left {
+.header.header--default.header--alignment-left .header__nav {
   margin-left: 56px;
 }
 
