@@ -105,6 +105,7 @@ h2 {
 
 .header.header--default.header--alignment-left .header__icon-wrapper .header__nav {
   justify-content: flex-end;
+  margin: 0;
 }
 
 .header.header--default.header--alignment-left .header__icon-wrapper .header__nav .nav {
