@@ -158,12 +158,13 @@
                         {%- endif -%}
                     {%- endform -%}
                 {%- endif -%}
-
+                {% if show_search %}
                     <li class="drawer-menu__item drawer-menu__item--search">
                         <a class="drawer-menu__link" href="#" data-search>
                         {{ 'sections.drawer_menu.search' | t }}
                         </a>
                     </li>
+                {%- endif -%}
                 </div>
             </div>
         </div>
