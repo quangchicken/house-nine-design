@@ -24,6 +24,8 @@
     }
     &__nav{
         .nav.nav--depth-1{
+            margin: 0 0 0 94px;
+            padding: 0;
             .nav__item{
                 margin-right: 12px;
                 @media #{$breakpoint-wider} {
@@ -39,15 +41,13 @@
                 font-weight: 400;
                 height: auto;
                 line-height: 1.2;
-                letter-spacing: 3px;
+                letter-spacing: 1px;
                 color: $title-colour;
                 @media #{$breakpoint-wide} {
                     font-size: 12px;
-                    letter-spacing: 2px;
                 }
                 @media #{$breakpoint-wider} {
                     font-size: 15px;
-                    letter-spacing: 3px;
                 }
             }
         }
@@ -55,6 +55,7 @@
     &.header--default.header--alignment-left .header__icon-wrapper{
         .header__nav{
             justify-content: flex-end;
+            margin: 0;
             .nav{
                 margin: 0;
                 padding: 0;
@@ -63,7 +64,10 @@
         .header__icon-list{
             margin-left: 15px;
             @media #{$breakpoint-wider} {
-                margin-left: 30px;
+                margin-left: 20px;
+            }
+            .header__icon--cart{
+                margin: 0;
             }
             .quick-cart__trigger{
                 height: auto;

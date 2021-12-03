@@ -23,7 +23,7 @@
                 {% if section.settings.logo_footer != blank %}
                 <div class="footer__top-logo">
                     <picture>
-                        <img src="{{ section.settings.logo_footer | img_url: 'master' }}" alt="" />
+                        <img src="{{ section.settings.logo_footer | img_url: 'x35', crop: 'center' }}" alt="" />
                     </picture>
                 </div>
                 {% endif %}
@@ -54,10 +54,7 @@
                                 autocapitalize="off">
                                 <!-- <label class="label--above" for="Email">{{ 'general.newsletter_form.email_placeholder' | t }}</label> -->
                                 <button class="footer__newsletter-button">
-                                    Submit
-                                    {% comment %}
-                                    {% render 'icon-arrow-forward' %}
-                                    {% endcomment %}
+                                    Submit <span>{% render 'icon-arrow-forward' %}</span>
                                 </button>
                             </div>
                         {% endif %}
