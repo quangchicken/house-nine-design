@@ -174,8 +174,8 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                     </li>
                     {% endif %}
 
-                    {% if show_search %}
-                    <li class="header__icon header__icon--search">
+                    
+                    <li class="header__icon header__icon--search" {% unless show_search %}style="display: none;"{% endunless %}>
                         <noscript>
                             <a href="{{ routes.search_url }}" class="color-inherit">
                                 <div class="relative">
@@ -185,7 +185,7 @@ window.theme.quickCartNote = {{ settings.quick_cart_note | json }};
                         </noscript>
                         {% render 'quick-search' %}
                     </li>
-                    {% endif %}
+                    
                     
                     {%- if shop.customer_accounts_enabled -%}
                         <li class="header__icon header__icon--account">
