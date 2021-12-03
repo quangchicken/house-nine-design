@@ -190,10 +190,6 @@ h2 {
   line-height: 1;
 }
 
-.footer__top-logo picture img {
-  height: 40px;
-}
-
 .footer__newsletter {
   display: flex;
   flex-direction: row;
