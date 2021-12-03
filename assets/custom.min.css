@@ -318,7 +318,7 @@ h2 {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   line-height: 1;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   transition: opacity .25s ease-in-out;
 }
 
