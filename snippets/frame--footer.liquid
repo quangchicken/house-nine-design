@@ -23,7 +23,7 @@
                 {% if section.settings.logo_footer != blank %}
                 <div class="footer__top-logo">
                     <picture>
-                        <img src="{{ section.settings.logo_footer | img_url: 'x35' }}" alt="" />
+                        <img src="{{ section.settings.logo_footer | img_url: 'x35' | crop: 'center' }}" alt="" />
                     </picture>
                 </div>
                 {% endif %}
