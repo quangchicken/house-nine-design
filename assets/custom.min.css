@@ -256,6 +256,10 @@ h2 {
   opacity: 0.5;
 }
 
+.footer__newsletter-button .icon {
+  margin-left: 3px;
+}
+
 .footer__bottom {
   padding: 30px 0;
 }
