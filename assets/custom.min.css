@@ -180,6 +180,12 @@ h2 {
   border-bottom: 1px solid #595B4F;
 }
 
+@media only screen and (max-width: 959px) {
+  .footer__top {
+    display: none;
+  }
+}
+
 .footer__top .row {
   display: flex;
   align-items: flex-end;
