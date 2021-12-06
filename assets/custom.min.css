@@ -190,16 +190,14 @@ h2 {
   border-bottom: 1px solid #595B4F;
 }
 
-@media only screen and (max-width: 959px) {
-  .footer__top {
-    display: none;
-  }
-}
-
 .footer__top .row {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+}
+
+.footer__top-logo {
+  margin-right: 40px;
 }
 
 .footer__top-logo picture {
@@ -211,7 +209,6 @@ h2 {
   flex-direction: row;
   align-items: flex-end;
   width: 40%;
-  margin-left: 30px;
   margin-bottom: 5px;
 }
 
@@ -239,6 +236,7 @@ h2 {
   height: auto;
   background-color: transparent;
   background: transparent;
+  border: none;
   border-bottom: 1px solid #332E26;
   outline: none;
 }
@@ -286,6 +284,7 @@ h2 {
 .footer__contact-mail {
   display: flex;
   align-items: flex-end;
+  display: none;
 }
 
 .footer__contact-mail h2 {

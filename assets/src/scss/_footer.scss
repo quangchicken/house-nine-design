@@ -14,15 +14,16 @@
     &__top{
         padding: 20px 0;
         border-bottom: 1px solid #595B4F;
-        @media #{$breakpoint-max-wide} {
-            display: none;
-        }
+        // @media #{$breakpoint-max-wide} {
+        //     display: none;
+        // }
         .row{
             display: flex;
             align-items: flex-end;
             flex-wrap: wrap;
         }
         &-logo{
+            margin-right: 40px;
             picture{
                 line-height: 1;
                 img{
@@ -36,7 +37,6 @@
         flex-direction: row;
         align-items: flex-end;
         width: 40%;
-        margin-left: 30px;
         margin-bottom: 5px;
         @media #{$breakpoint-max-medium} {
             width: 100%;
@@ -57,6 +57,7 @@
             height: auto;
             background-color: transparent;
             background: transparent;
+            border: none;
             border-bottom: 1px solid #332E26;
             outline: none;
             &::placeholder{
@@ -97,6 +98,7 @@
     &__contact-mail{
         display: flex;
         align-items: flex-end;
+        display: none;
         h2{
             margin: 0;
             font-family: $title-font;
