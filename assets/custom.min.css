@@ -249,6 +249,12 @@ h2 {
   outline: none;
 }
 
+.footer__newsletter p {
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+
 .footer__newsletter-button {
   text-transform: uppercase;
   height: auto;
