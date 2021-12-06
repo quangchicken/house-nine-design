@@ -249,6 +249,18 @@ h2 {
   outline: none;
 }
 
+.footer__newsletter .input.error {
+  background-color: transparent;
+}
+
+.footer__newsletter .input:-webkit-autofill {
+  background-color: transparent;
+}
+
+.footer__newsletter .input:disabled {
+  background-color: transparent;
+}
+
 .footer__newsletter p {
   margin: 0 0 0 5px;
   white-space: nowrap;
