@@ -322,11 +322,15 @@
       "product--static": {
         "type": "product--static",
         "settings": {
+          "enable_full_width": false,
+          "show_thumbnails": true,
+          "thumbnail_position": "horizontal",
+          "thumbnail_size": "large",
           "show_vendor": true,
-          "show_swatches": false,
+          "show_swatches": true,
           "show_share_buttons": false,
-          "show_quantity_input": true,
-          "enable_payment_button": true,
+          "show_quantity_input": false,
+          "enable_payment_button": false,
           "enable_video_looping": true
         }
       },
@@ -883,6 +887,16 @@
           "button_text": "Contact Us",
           "icon": "shopify:\/\/shop_images\/H9_marks_cotton-04.png",
           "image_height": 100
+        }
+      },
+      "list-collections--template": {
+        "type": "list-collections--template",
+        "settings": {
+          "display_type": "all",
+          "columns": 3,
+          "aspect_ratio": "natural",
+          "collection_title_alignment": "left",
+          "show_product_count": true
         }
       }
     },
