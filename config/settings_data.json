@@ -893,8 +893,8 @@
         "type": "list-collections--template",
         "settings": {
           "display_type": "all",
-          "columns": 3,
-          "aspect_ratio": "natural",
+          "columns": 2,
+          "aspect_ratio": "landscape",
           "collection_title_alignment": "left",
           "show_product_count": true
         }
