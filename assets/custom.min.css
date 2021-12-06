@@ -255,7 +255,6 @@ h2 {
 
 .footer__newsletter .input:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: #fff !important;
 }
 
 .footer__newsletter .input:disabled {
