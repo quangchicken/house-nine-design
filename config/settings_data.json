@@ -268,10 +268,10 @@
           "filter_type": "by_tag",
           "filter_style": "sidebar",
           "show_swatches": false,
-          "products_per_row": 3,
-          "aspect_ratio": "natural",
+          "products_per_row": 2,
+          "aspect_ratio": "landscape",
           "per_page": 12,
-          "pagination": "click"
+          "pagination": "infinite"
         }
       },
       "testimonials--static": {
