@@ -208,7 +208,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 40%;
+  width: 70%;
   margin-bottom: 5px;
 }
 
@@ -247,6 +247,24 @@ h2 {
 
 .footer__newsletter .input:focus {
   outline: none;
+}
+
+.footer__newsletter .input.error {
+  background-color: transparent;
+}
+
+.footer__newsletter .input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.footer__newsletter .input:disabled {
+  background-color: transparent;
+}
+
+.footer__newsletter p {
+  margin: 0 0 0 5px;
+  white-space: nowrap;
+  line-height: 1;
 }
 
 .footer__newsletter-button {
