@@ -267,7 +267,7 @@
           "show_filters": false,
           "filter_type": "by_tag",
           "filter_style": "sidebar",
-          "show_swatches": false,
+          "show_swatches": true,
           "products_per_row": 2,
           "aspect_ratio": "landscape",
           "per_page": 12,
