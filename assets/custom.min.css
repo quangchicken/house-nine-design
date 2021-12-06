@@ -202,6 +202,10 @@ h2 {
   flex-wrap: wrap;
 }
 
+.footer__top-logo {
+  margin-right: 40px;
+}
+
 .footer__top-logo picture {
   line-height: 1;
 }
