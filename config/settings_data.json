@@ -892,7 +892,7 @@
       "list-collections--template": {
         "type": "list-collections--template",
         "settings": {
-          "display_type": "all",
+          "display_type": "selected",
           "columns": 2,
           "aspect_ratio": "landscape",
           "collection_title_alignment": "left",
