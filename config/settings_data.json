@@ -891,6 +891,24 @@
       },
       "list-collections--template": {
         "type": "list-collections--template",
+        "blocks": {
+          "32df47c5-cc52-46e0-b15c-0a5813be834e": {
+            "type": "collection",
+            "settings": {
+              "collection": "ottomans"
+            }
+          },
+          "ce0226ed-b418-42ac-9c35-42b641c6b944": {
+            "type": "collection",
+            "settings": {
+              "collection": "chairs"
+            }
+          }
+        },
+        "block_order": [
+          "32df47c5-cc52-46e0-b15c-0a5813be834e",
+          "ce0226ed-b418-42ac-9c35-42b641c6b944"
+        ],
         "settings": {
           "display_type": "selected",
           "columns": 2,
