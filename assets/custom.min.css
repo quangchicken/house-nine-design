@@ -460,3 +460,7 @@ h2 {
   margin: 0 0 15px;
   letter-spacing: .1em;
 }
+
+.product-page-wrapper h1 {
+  letter-spacing: 4px;
+}
