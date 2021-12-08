@@ -123,7 +123,7 @@
           "90a49c56-35e7-4c7d-9081-aed2b13954d7": {
             "type": "mega_nav",
             "settings": {
-              "dropdown_parent_link": "Shop",
+              "dropdown_parent_link": "Store",
               "mega_nav_featured_image": "shopify:\/\/shop_images\/Gara_Rock_Room_1-5757.jpg",
               "featured_image_heading": "Headboards",
               "featured_image_link_text": "Shop Now",
@@ -221,6 +221,7 @@
           "1602305412730"
         ],
         "settings": {
+          "logo_footer": "shopify:\/\/shop_images\/H9.png",
           "show_headings": true,
           "show_payment_icons": false,
           "show_newsletter_signup": true,
@@ -267,11 +268,11 @@
           "show_filters": false,
           "filter_type": "by_tag",
           "filter_style": "sidebar",
-          "show_swatches": false,
-          "products_per_row": 3,
-          "aspect_ratio": "natural",
+          "show_swatches": true,
+          "products_per_row": 2,
+          "aspect_ratio": "landscape",
           "per_page": 12,
-          "pagination": "click"
+          "pagination": "infinite"
         }
       },
       "testimonials--static": {
@@ -322,11 +323,16 @@
       "product--static": {
         "type": "product--static",
         "settings": {
+          "enable_full_width": false,
+          "show_thumbnails": true,
+          "thumbnail_position": "horizontal",
+          "thumbnail_size": "large",
           "show_vendor": true,
-          "show_swatches": false,
+          "show_swatches": true,
           "show_share_buttons": false,
-          "show_quantity_input": true,
-          "enable_payment_button": true,
+          "show_quantity_input": false,
+          "show_taxes_included": true,
+          "enable_payment_button": false,
           "enable_video_looping": true
         }
       },
@@ -849,21 +855,21 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3588.jpg",
-              "link": ""
+              "link": "#"
             }
           },
           "1638331836854fd80a-1": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3509.jpg",
-              "link": ""
+              "link": "#"
             }
           },
           "1638331836854fd80a-2": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
-              "link": ""
+              "link": "#"
             }
           }
         },
@@ -883,6 +889,34 @@
           "button_text": "Contact Us",
           "icon": "shopify:\/\/shop_images\/H9_marks_cotton-04.png",
           "image_height": 100
+        }
+      },
+      "list-collections--template": {
+        "type": "list-collections--template",
+        "blocks": {
+          "32df47c5-cc52-46e0-b15c-0a5813be834e": {
+            "type": "collection",
+            "settings": {
+              "collection": "ottomans"
+            }
+          },
+          "ce0226ed-b418-42ac-9c35-42b641c6b944": {
+            "type": "collection",
+            "settings": {
+              "collection": "chairs"
+            }
+          }
+        },
+        "block_order": [
+          "32df47c5-cc52-46e0-b15c-0a5813be834e",
+          "ce0226ed-b418-42ac-9c35-42b641c6b944"
+        ],
+        "settings": {
+          "display_type": "selected",
+          "columns": 2,
+          "aspect_ratio": "landscape",
+          "collection_title_alignment": "left",
+          "show_product_count": true
         }
       }
     },
