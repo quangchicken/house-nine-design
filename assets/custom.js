@@ -4,10 +4,9 @@ function navMeganav() {
         megaNav = jQuery('.nav__meganav');
 
     if(current == 0){
-        megaNav.css('top', header_height);
-        console.log(header_height);
+        megaNav.css('top', 105);
     } else{
-        megaNav.css('top', header_height);
+        megaNav.css('top', 60);
     }
 }
 
