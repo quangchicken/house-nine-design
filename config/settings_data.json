@@ -855,21 +855,21 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3588.jpg",
-              "link": "#"
+              "link": "shopify:\/\/pages\/contact"
             }
           },
           "1638331836854fd80a-1": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3509.jpg",
-              "link": "#"
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "1638331836854fd80a-2": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
-              "link": "#"
+              "link": "shopify:\/\/collections"
             }
           }
         },
@@ -921,6 +921,7 @@
       }
     },
     "content_for_index": [
+      "1638331836854fd80a",
       "1602299175982",
       "1605556096757",
       "1602299320050",
@@ -935,8 +936,7 @@
       "1602300825789",
       "1602300955150",
       "1602301004470",
-      "1602301096982",
-      "1638331836854fd80a"
+      "1602301096982"
     ],
     "blocks": {
       "1635855554402b8086": {
