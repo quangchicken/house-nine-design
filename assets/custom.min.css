@@ -468,3 +468,7 @@ h2 {
 .product__policies {
   display: none;
 }
+
+.collection .text-block__heading {
+  letter-spacing: 1px;
+}
