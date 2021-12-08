@@ -302,7 +302,6 @@ h2 {
 .footer__contact-mail {
   display: flex;
   align-items: flex-end;
-  display: none;
 }
 
 .footer__contact-mail h2 {
