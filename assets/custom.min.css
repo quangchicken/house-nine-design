@@ -464,3 +464,7 @@ h2 {
 .product-page-wrapper h1 {
   letter-spacing: 4px;
 }
+
+.product__policies {
+  display: none;
+}
