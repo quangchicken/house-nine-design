@@ -1,7 +1,6 @@
 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 {%- assign height = image.height | times: 1.0 | default: 1.0 -%}
-<!-- {%- assign width = image.width | times: 1.0 | default: 1.0 -%} -->
-{%- assign width = 1 -%}
+{%- assign width = image.width | times: 1.0 | default: 1.0 -%}
 
 {% assign image_id = image.id %}
 
@@ -9,7 +8,8 @@
   {% assign image_id = id %}
 {% endunless %}
 
-{%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%}
+<!-- {%- assign padding_top = height | divided_by: width | times: 100 | append: "%" -%} -->
+{%- assign padding_top = 199 | append: "%" -%}
 
 <div class="image image--{{ image_id }} {{ wrapper_class }}">
   <img
