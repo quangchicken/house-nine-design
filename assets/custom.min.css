@@ -204,6 +204,12 @@ h2 {
   line-height: 1;
 }
 
+@media only screen and (max-width: 959px) {
+  .footer__top-logo {
+    display: none;
+  }
+}
+
 .footer__newsletter {
   display: flex;
   flex-direction: row;
@@ -215,7 +221,6 @@ h2 {
 @media only screen and (max-width: 769px) {
   .footer__newsletter {
     width: 100%;
-    margin: 15px 0 0;
   }
 }
 
@@ -302,7 +307,12 @@ h2 {
 .footer__contact-mail {
   display: flex;
   align-items: flex-end;
-  display: none;
+}
+
+@media only screen and (max-width: 959px) {
+  .footer__contact-mail {
+    display: none;
+  }
 }
 
 .footer__contact-mail h2 {
@@ -325,12 +335,6 @@ h2 {
 
 .footer__menu {
   margin-left: auto;
-}
-
-@media only screen and (max-width: 959px) {
-  .footer__menu {
-    margin-top: 30px;
-  }
 }
 
 .footer__menu .list {
@@ -459,4 +463,16 @@ h2 {
   font-size: 12px;
   margin: 0 0 15px;
   letter-spacing: .1em;
+}
+
+.product-page-wrapper h1 {
+  letter-spacing: 4px;
+}
+
+.product__policies {
+  display: none;
+}
+
+.collection .text-block__heading {
+  letter-spacing: 1px;
 }
