@@ -304,6 +304,12 @@ h2 {
   align-items: flex-end;
 }
 
+@media only screen and (max-width: 959px) {
+  .footer__contact-mail {
+    display: none;
+  }
+}
+
 .footer__contact-mail h2 {
   margin: 0;
   font-family: "Karla", sans-serif;
