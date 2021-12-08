@@ -3,8 +3,11 @@ function navMeganav() {
         current = jQuery(window).scrollTop(),
         megaNav = jQuery('.nav__meganav');
 
-    megaNav.css('top', header_height);
-    console.log(current);
+    if(current == 0){
+        megaNav.css('top', header_height);
+    } else{
+        megaNav.css('top', header_height);
+    }
 }
 
 jQuery(window).on('scroll', navMeganav);
