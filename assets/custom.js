@@ -4,6 +4,7 @@ function navMeganav() {
         megaNav = jQuery('.nav__meganav');
 
     megaNav.css('top', header_height);
+    console.log(current);
 }
 
 jQuery(window).on('scroll', navMeganav);
