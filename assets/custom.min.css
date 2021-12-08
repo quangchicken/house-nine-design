@@ -204,6 +204,12 @@ h2 {
   line-height: 1;
 }
 
+@media only screen and (max-width: 959px) {
+  .footer__top-logo {
+    display: none;
+  }
+}
+
 .footer__newsletter {
   display: flex;
   flex-direction: row;
