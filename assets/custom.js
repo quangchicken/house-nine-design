@@ -5,6 +5,7 @@ function navMeganav() {
 
     if(current == 0){
         megaNav.css('top', header_height);
+        console.log(header_height);
     } else{
         megaNav.css('top', header_height);
     }
