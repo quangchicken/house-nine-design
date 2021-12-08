@@ -221,6 +221,7 @@
           "1602305412730"
         ],
         "settings": {
+          "logo_footer": "shopify:\/\/shop_images\/H9.png",
           "show_headings": true,
           "show_payment_icons": false,
           "show_newsletter_signup": true,
@@ -330,6 +331,7 @@
           "show_swatches": true,
           "show_share_buttons": false,
           "show_quantity_input": false,
+          "show_taxes_included": true,
           "enable_payment_button": false,
           "enable_video_looping": true
         }
