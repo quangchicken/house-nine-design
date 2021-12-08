@@ -126,7 +126,7 @@
     {%- assign option_name = option.name | downcase -%}
 
     {% unless swatch_options contains option_name or chip_options contains option_name %}
-      <div class="product-form__option js-enabled">
+       <div class="product-form__option js-enabled">
         <select
           id="Option{{ option.position }}"
           name="options[{{ option.name | escape }}]"
