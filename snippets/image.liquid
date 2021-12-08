@@ -1,6 +1,7 @@
 {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 {%- assign height = image.height | times: 1.0 | default: 1.0 -%}
-{%- assign width = image.width | times: 1.0 | default: 1.0 -%}
+<!-- {%- assign width = image.width | times: 1.0 | default: 1.0 -%} -->
+{%- assign width = 1 -%}
 
 {% assign image_id = image.id %}
 
