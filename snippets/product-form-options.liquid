@@ -46,7 +46,7 @@
             type="button"
             data-button="{{ value }}"
             class="product-form__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-            style="background-image: url({{ value | handle | append: '.' | append: 'jpg' | file_url }})"
+            style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
             tabindex="0"
             aria-label="{{ value }}"
             >
