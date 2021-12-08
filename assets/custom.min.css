@@ -337,12 +337,6 @@ h2 {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 959px) {
-  .footer__menu {
-    margin-top: 30px;
-  }
-}
-
 .footer__menu .list {
   margin: 0;
   padding: 0;
