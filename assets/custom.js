@@ -11,3 +11,6 @@ function navMeganav() {
 }
 
 jQuery(window).on('scroll', navMeganav);
+jQuery(document).ready(function() {
+    
+});
