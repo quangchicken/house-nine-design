@@ -9,5 +9,4 @@ function navMeganav() {
         megaNav.css('top', 60);
     }
 }
-
 jQuery(window).on('scroll', navMeganav);
