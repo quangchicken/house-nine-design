@@ -387,6 +387,7 @@ h2 {
 }
 
 .slideshow .owl-carousel {
+  max-width: 33.33333%;
   margin: 0 auto;
 }
 
