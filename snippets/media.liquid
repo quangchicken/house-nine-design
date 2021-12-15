@@ -10,7 +10,7 @@
   {% endif %}
 >
   {%- if media.media_type == 'image' -%}
-    <a class="media__image" href="{{ link }}" data-open="{{ media.id }}">
+    <a class="media__image" href="{{ link }}" data-open="{{ media.id }}" data-alt="{{  media.alt }}">
       {% render 'image' with image: media %}
     </a>
 
