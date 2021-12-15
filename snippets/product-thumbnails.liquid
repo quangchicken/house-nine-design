@@ -5,7 +5,7 @@
         <li class="product-thumbnails__item">
           <button
             type="button"
-            class="product-thumbnails__item-link{% if media.id == featured_media.id %} active{% endif %}"
+            class="product-thumbnails__item-link {% if forloop.first == true %}active	{% endif %}"
             data-thumbnail-id="{{ media.id }}"
             data-product-thumbnail
             aria-label="{{ 'general.accessibility.image_thumbail' | t: number: forloop.index }}"
