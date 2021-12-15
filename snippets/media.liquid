@@ -1,3 +1,4 @@
+{% unless media.alt == 'color-swatch' %}
 <div
   class="media{% if classes != blank %} {{ classes }}{% endif %}"
   data-media-id="{{ media.id }}"
@@ -14,7 +15,6 @@
     <a class="media__image" href="{{ link }}" data-open="{{ media.id }}" data-alt="{{  media.alt }}">
       {% render 'image' with image: media %}
     </a>
-    
   {%- elsif media.media_type == 'video' -%}
     {{ media | video_tag: image_size: "1024x" }}
 
@@ -38,3 +38,4 @@
 
   {%- endif -%}
 </div>
+{% endunless %}
