@@ -11,7 +11,7 @@
             aria-label="{{ 'general.accessibility.image_thumbail' | t: number: forloop.index }}"
           >
             {%- assign id = media.id | append: '--thumb' -%}
-            {% unless product.alt == 'color-swatch' %}
+            {% unless media.alt == 'color-swatch' %}
             {% render 'image' with
               image: media.preview_image,
               id: id
