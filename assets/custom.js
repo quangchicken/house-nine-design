@@ -13,6 +13,6 @@ function navMeganav() {
 jQuery(window).on('scroll', navMeganav);
 jQuery(document).ready(function() {
     if( jQuery('.product-thumbnails__item-link').hasClass('active')){
-        
+        jQuery(this).click
     }
 });
