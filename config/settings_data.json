@@ -254,22 +254,22 @@
       "collection--template": {
         "type": "collection--template",
         "settings": {
-          "show_collection_image": true,
+          "show_collection_image": false,
           "overlay_opacity": 20,
           "overlay_color": "#000000",
           "text_color": "#ffffff",
           "show_border": true,
           "show_heading": true,
           "show_small_heading": true,
-          "show_description": true,
-          "heading_alignment": "left",
+          "show_description": false,
+          "heading_alignment": "center",
           "text_max_width": 38,
           "show_sort": false,
           "show_filters": false,
           "filter_type": "by_tag",
           "filter_style": "sidebar",
-          "show_swatches": true,
-          "products_per_row": 2,
+          "show_swatches": false,
+          "products_per_row": 3,
           "aspect_ratio": "landscape",
           "per_page": 12,
           "pagination": "infinite"
@@ -348,8 +348,8 @@
         "type": "gallery-grid--static",
         "settings": {
           "enabled": false,
-          "columns": 4,
-          "aspect_ratio": "square",
+          "columns": 3,
+          "aspect_ratio": "landscape",
           "title": "Gallery",
           "text": "<p>Let people know about where to find you on social media. Don't forget to add a <a>link<\/a>.<\/p>"
         }
@@ -359,7 +359,7 @@
         "settings": {
           "enabled": true,
           "heading": "Related",
-          "columns": 4
+          "columns": 3
         }
       },
       "page-about--template": {
