@@ -53,6 +53,7 @@
     "swatch_options": "Color, Fabric",
     "chip_options": "",
     "cart_quick_shop_enabled": false,
+    "show_second_image": false,
     "cart_quick_shop_show_quantity_input": false,
     "cart_notes_enable": true,
     "favicon": "",
