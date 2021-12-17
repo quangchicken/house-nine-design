@@ -43,7 +43,7 @@
             {% for image in product.images %}
                 {% assign colorFile = value | handle %}
                 {% assign colorProductImage = image.alt | handle %}
-                {% if colorProductImage == value %}
+                {% if colorProductImage == colorFile %}
 
                 {% endif %}
             {% endfor %}
