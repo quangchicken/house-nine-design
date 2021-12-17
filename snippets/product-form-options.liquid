@@ -49,7 +49,7 @@
                 {% if colorProductImage == colorFile %}
                     {% assign imageSwatch = image | img_url: '100x100' %}
                 {% else %}
-                    {% assign imageSwatch = '' %}
+                    {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
                 {% endif %}
             {% endfor %}
 
