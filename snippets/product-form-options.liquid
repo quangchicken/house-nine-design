@@ -41,9 +41,8 @@
             <div class="product-form__color-swatches-selected product-form__selected-label">{{ value }}</div>
             {% endif %}
             {% for image in product.images %}
-                <h2>{{ value | handle }}</h2>
-                <h3>{{ image.alt }}</h3>
-                {% assign colorProductImage = image.alt | downcase | handle %}
+                {% assign colorFile = value | handle %}
+                {% assign colorProductImage = image.alt | handle %}
                 {% if colorProductImage == value %}
 
                 {% endif %}
