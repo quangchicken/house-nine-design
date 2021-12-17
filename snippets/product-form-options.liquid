@@ -40,6 +40,11 @@
             {% if option.selected_value == value %}
             <div class="product-form__color-swatches-selected product-form__selected-label">{{ value }}</div>
             {% endif %}
+            {% for image in product.images %}
+                {% assign colorProductImage = image.alt | downcase | handle %}
+                {% if colorProductImage = value %}
+                {% endif %}
+            {% endfor %}
         {% endfor %}
         {% for value in option.values %}
             <button
