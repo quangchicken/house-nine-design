@@ -1,7 +1,3 @@
-{% for image in product.images %}
-    <h3>{{ image.alt }}</h3> 
-{% endfor %}
-
 {% assign file_extension = 'jpg' %}
 {% assign chip_options = settings.chip_options | downcase | split: ', ' %}
 {% assign swatch_options = settings.swatch_options | downcase | split: ', ' %}
