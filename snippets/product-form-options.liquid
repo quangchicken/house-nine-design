@@ -40,6 +40,8 @@
             {% if option.selected_value == value %}
             <div class="product-form__color-swatches-selected product-form__selected-label">{{ value }}</div>
             {% endif %}
+        {% endfor %}
+        {% for value in option.values %}
             {% for image in product.images %}
                 {% assign colorFile = value | handle %}
                 {% assign colorProductImage = image.alt | handle %}
@@ -49,13 +51,12 @@
                     {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
                 {% endif %}
             {% endfor %}
-        {% endfor %}
-        {% for value in option.values %}
+
             <button
             type="button"
             data-button="{{ value }}"
             class="product-form__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-            style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
+            style="background-image: url({{ imageSwatch }})"
             tabindex="0"
             aria-label="{{ value }}"
             >
