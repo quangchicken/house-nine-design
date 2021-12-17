@@ -44,7 +44,7 @@
                 <h3>{{ value }}</h3>
                 <h3>{{ image.alt }}</h3>
                 {% assign colorProductImage = image.alt | downcase | handle %}
-                {% if colorProductImage = value %}
+                {% if colorProductImage == value %}
                 {% endif %}
             {% endfor %}
         {% endfor %}
