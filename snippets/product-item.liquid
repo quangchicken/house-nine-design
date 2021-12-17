@@ -43,7 +43,7 @@
               disable_style: includes_aspect_ratio
             %}
           </div>
-          <div class="product-item__image not-first" {% if show_second_image %}style="display: none;"{% endif %}>
+          <div class="product-item__image not-first" {% unless show_second_image %}style="display: none;"{% endunless %}>
             {% render 'image' with
               image: product.media[1].preview_image,
               id: product.media[1].id,
