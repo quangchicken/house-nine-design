@@ -45,9 +45,9 @@
             {% for image in product.images %}
                 {% assign colorFile = value | handle %}
                 {% assign colorProductImage = image.alt | handle %}
-                {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
+                {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %} 
                 {% if colorProductImage == colorFile %}
-                    {% assign imageSwatch = product | img_url: '100x100' %}
+                    {% assign imageSwatch = image | img_url: '100x100' %}
                 {% endif %}
             {% endfor %}
 
