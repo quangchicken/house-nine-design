@@ -50,7 +50,7 @@
                     {% assign imageSwatch = image | img_url: '100x100' %}
                 {% else %}
                 <h3>{{ colorFile }}</h3>
-                <h2>{{ colorProductImage }}</h2>
+                <h2>{{ colorProductImage }}-{{ forloop.index0 }}</h2>
                     {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
                 {% endif %}
             {% endfor %}
