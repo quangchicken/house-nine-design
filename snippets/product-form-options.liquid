@@ -46,7 +46,7 @@
                 {% assign colorFile = value | handle %}
                 {% assign colorProductImage = image.alt | handle %}
                 {% if colorProductImage == colorFile %}
-                    {% assign imageSwatch = '123' %}
+                    {% assign imageSwatch = image.alt %}
                 {% else %}
                     {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
                 {% endif %}
