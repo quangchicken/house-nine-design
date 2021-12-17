@@ -42,6 +42,7 @@
               disable_style: includes_aspect_ratio
             %}
           </div>
+          {% comment %}
           <div class="product-item__image not-first">
             {% render 'image' with
               image: product.media[1].preview_image,
@@ -49,6 +50,7 @@
               disable_style: true
             %}
           </div>
+          {% endcomment %}
         </div>
       {% else %}
         <div class="product-item__image">
@@ -93,7 +95,7 @@
     {% comment %} PRODUCT SWATCHES {% endcomment %}
     {% if swatches_enabled %}
       {%- liquid
-        assign file_extension = 'png'
+        assign file_extension = 'jpg'
         assign swatch_options = settings.swatch_options | downcase | split: ', '
         assign swatch_exists = false
       -%}
