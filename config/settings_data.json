@@ -51,7 +51,7 @@
     "search_show_price": true,
     "search_show_vendor": false,
     "swatch_options": "Color",
-    "chip_options": "Size",
+    "chip_options": "Fabric",
     "cart_quick_shop_enabled": true,
     "cart_quick_shop_show_quantity_input": false,
     "cart_notes_enable": true,
