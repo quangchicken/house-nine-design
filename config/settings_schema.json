@@ -478,6 +478,12 @@
       },
       {
         "type": "checkbox",
+        "id": "show_second_image",
+        "label": "Show Second Image",
+        "default": true
+      },
+      {
+        "type": "checkbox",
         "id": "cart_quick_shop_show_quantity_input",
         "label": "Show quick shop quantity input",
         "info": "If quantity inputs are hidden, quantities will default to 1.",

@@ -1,4 +1,5 @@
 {% assign quick_shop_enabled = false %}
+{% assign show_second_image = settings.show_second_image %}
 
 {% if settings.cart_quick_shop_enabled and product.available %}
   {% assign quick_shop_enabled = true %}
@@ -42,7 +43,7 @@
               disable_style: includes_aspect_ratio
             %}
           </div>
-          <div class="product-item__image not-first">
+          <div class="product-item__image not-first" {% unless show_second_image %}style="display: none;"{% endunless %}>
             {% render 'image' with
               image: product.media[1].preview_image,
               id: product.media[1].id,
@@ -93,7 +94,7 @@
     {% comment %} PRODUCT SWATCHES {% endcomment %}
     {% if swatches_enabled %}
       {%- liquid
-        assign file_extension = 'png'
+        assign file_extension = 'jpg'
         assign swatch_options = settings.swatch_options | downcase | split: ', '
         assign swatch_exists = false
       -%}

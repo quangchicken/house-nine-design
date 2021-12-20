@@ -42,11 +42,23 @@
             {% endif %}
         {% endfor %}
         {% for value in option.values %}
+            {% for image in product.images %}
+                {% assign colorFile = value | handle %}
+                {% assign colorProductImage = image.alt | handle %}
+                {% assign imageSwatch = '' %}
+                {% if colorProductImage == colorFile %}
+                    {% assign imageSwatch = image | img_url: '100x100' %}
+                    {% break %}
+                {% else %} 
+                    {% assign imageSwatch = value | handle | append: '.' | append: file_extension | file_url %}
+                {% endif %}
+            {% endfor %}
+
             <button
             type="button"
             data-button="{{ value }}"
             class="product-form__color-swatch {% if option.selected_value == value %}selected{% endif %}"
-            style="background-image: url({{ value | handle | append: '.' | append: file_extension | file_url }})"
+            style="background-image: url({{ imageSwatch }})"
             tabindex="0"
             aria-label="{{ value }}"
             >

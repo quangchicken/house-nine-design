@@ -11,3 +11,10 @@ function navMeganav() {
 }
 
 jQuery(window).on('scroll', navMeganav);
+jQuery(document).ready(function() {
+    jQuery('.product-thumbnails__item-link').each(function(){
+        if( jQuery(this).hasClass('active')){
+            jQuery(this).trigger('click');
+        }
+    });
+});
