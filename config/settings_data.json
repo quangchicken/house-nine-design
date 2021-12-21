@@ -893,12 +893,6 @@
               "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-11.jpg",
               "link": ""
             }
-          },
-          "27d5ff2a-5745-4f1d-9160-d0b1e523110d": {
-            "type": "image",
-            "settings": {
-              "link": ""
-            }
           }
         },
         "block_order": [
@@ -907,8 +901,7 @@
           "1638331836854fd80a-2",
           "dab08e8c-1fc6-4dcc-982c-0471db7405f6",
           "2e66a5fe-4263-4548-91cf-2a798855a6b8",
-          "0f043797-c2be-4181-a03e-37b9becb9c50",
-          "27d5ff2a-5745-4f1d-9160-d0b1e523110d"
+          "0f043797-c2be-4181-a03e-37b9becb9c50"
         ],
         "settings": {
           "custom_class": "",
