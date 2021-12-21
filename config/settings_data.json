@@ -866,6 +866,13 @@
               "link": "shopify:\/\/pages\/portfolio"
             }
           },
+          "10552c37-cec9-4819-b180-dd2f586f958a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-82-upliad.jpg",
+              "link": ""
+            }
+          },
           "1638331836854fd80a-2": {
             "type": "image",
             "settings": {
@@ -898,6 +905,7 @@
         "block_order": [
           "1638331836854fd80a-0",
           "1638331836854fd80a-1",
+          "10552c37-cec9-4819-b180-dd2f586f958a",
           "1638331836854fd80a-2",
           "dab08e8c-1fc6-4dcc-982c-0471db7405f6",
           "2e66a5fe-4263-4548-91cf-2a798855a6b8",
