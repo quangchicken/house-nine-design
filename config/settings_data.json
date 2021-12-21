@@ -855,29 +855,45 @@
           "1638331836854fd80a-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/112102-House9-Project2-CotswoldBarn-22.jpg",
+              "image": "shopify:\/\/shop_images\/112102-House9-Project2-CotswoldBarn-22_ad5dca91-337b-43a0-a4ba-b64fbfb05dbb.jpg",
               "link": "shopify:\/\/pages\/contact"
             }
           },
           "1638331836854fd80a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Gara_Rock_The_Signal_House-26web.jpg",
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3509_e040990b-bef8-49c8-821b-77004be46b90.jpg",
               "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "1638331836854fd80a-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3617.jpg",
               "link": "shopify:\/\/collections"
+            }
+          },
+          "dab08e8c-1fc6-4dcc-982c-0471db7405f6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737_923b53ce-f506-49e5-b734-55cf07d68dd7.jpg",
+              "link": ""
+            }
+          },
+          "2e66a5fe-4263-4548-91cf-2a798855a6b8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LakeHouseRe-Edit-3.jpg",
+              "link": ""
             }
           }
         },
         "block_order": [
           "1638331836854fd80a-0",
           "1638331836854fd80a-1",
-          "1638331836854fd80a-2"
+          "1638331836854fd80a-2",
+          "dab08e8c-1fc6-4dcc-982c-0471db7405f6",
+          "2e66a5fe-4263-4548-91cf-2a798855a6b8"
         ],
         "settings": {
           "custom_class": "",
