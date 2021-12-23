@@ -57,6 +57,8 @@
     "cart_quick_shop_show_quantity_input": false,
     "cart_notes_enable": true,
     "favicon": "shopify:\/\/shop_images\/H9_marks_black-04.png",
+    "contact_support_phone": "+44 (0)208 962 9918",
+    "contact_support_address": "Unit 17, 2-4 Exmoor St, London W10 6BD",
     "contact_support_email": "studio@housenine.co.uk",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/H9_MainLogo-03_d39dbb54-5662-4be1-8c62-ee25de15afab.png",
