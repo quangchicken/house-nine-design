@@ -131,34 +131,10 @@
               "featured_image_link": "",
               "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
             }
-          },
-          "2a31fb6e-189c-4ccb-b0d1-613bcd809b30": {
-            "type": "mega_nav",
-            "settings": {
-              "dropdown_parent_link": "Services",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
-              "featured_image_heading": "",
-              "featured_image_link_text": "Full service",
-              "featured_image_link": "shopify:\/\/pages\/house-nine-full-service",
-              "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
-            }
-          },
-          "43129d90-2b16-4a6c-ae12-2e1a3008fe9b": {
-            "type": "mega_nav",
-            "settings": {
-              "dropdown_parent_link": "PORTFOLIO",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3748.jpg",
-              "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": "",
-              "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
-            }
           }
         },
         "block_order": [
-          "90a49c56-35e7-4c7d-9081-aed2b13954d7",
-          "2a31fb6e-189c-4ccb-b0d1-613bcd809b30",
-          "43129d90-2b16-4a6c-ae12-2e1a3008fe9b"
+          "90a49c56-35e7-4c7d-9081-aed2b13954d7"
         ],
         "settings": {
           "header_style": "default",
@@ -856,7 +832,7 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/112102-House9-Project2-CotswoldBarn-22_ad5dca91-337b-43a0-a4ba-b64fbfb05dbb.jpg",
-              "link": "shopify:\/\/pages\/contact"
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "1638331836854fd80a-1": {
@@ -870,35 +846,35 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3617.jpg",
-              "link": "shopify:\/\/collections"
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "10552c37-cec9-4819-b180-dd2f586f958a": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-82-upliad.jpg",
-              "link": ""
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "dab08e8c-1fc6-4dcc-982c-0471db7405f6": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737_923b53ce-f506-49e5-b734-55cf07d68dd7.jpg",
-              "link": ""
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "2e66a5fe-4263-4548-91cf-2a798855a6b8": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/LakeHouseRe-Edit-3.jpg",
-              "link": ""
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "0f043797-c2be-4181-a03e-37b9becb9c50": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-11.jpg",
-              "link": ""
+              "link": "shopify:\/\/pages\/portfolio"
             }
           }
         },
