@@ -240,7 +240,7 @@
           "show_border": true,
           "show_heading": true,
           "show_small_heading": true,
-          "show_description": false,
+          "show_description": true,
           "heading_alignment": "center",
           "text_max_width": 38,
           "show_sort": false,
