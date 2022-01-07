@@ -231,11 +231,11 @@
       "remove": "Remove",
       "subtotal": "Subtotal",
       "savings": "You're saving",
-      "shipping_at_checkout": "Shipping & taxes calculated at checkout",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout.",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout.",
-      "taxes_included_and_shipping_policy_html": "Tax included and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout.",
+      "shipping_at_checkout": "Delivery & VAT calculated at checkout",
+      "taxes_and_shipping_at_checkout": "VAT and delivery calculated at checkout.",
+      "taxes_and_shipping_policy_at_checkout_html": "VAT and <a href=\"{{ link }}\">delivery<\/a> calculated at checkout.",
+      "taxes_included_but_shipping_at_checkout": "VAT included and delivery calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "VAT included and <a href=\"{{ link }}\">delivery<\/a> calculated at checkout.",
       "update": "Update",
       "checkout": "Check out",
       "empty": "Your cart is currently empty.",
@@ -392,7 +392,7 @@
       "fulfillment_status": "Fulfillment Status",
       "discount": "Discount",
       "shipping": "Shipping",
-      "tax": "Tax",
+      "tax": "VAT",
       "product": "Product",
       "sku": "SKU",
       "price": "Price",
@@ -495,7 +495,7 @@
       "back_to_collection": "Back to {{ title }}",
       "vendor": "Vendor",
       "quantity_minimum_message": "Quantity must be 1 or more",
-      "include_taxes": "Tax included.",
+      "include_taxes": "VAT included.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "unit_price_label": "Unit price",
       "view_cart": "View basket",
@@ -568,6 +568,14 @@
     "checkout": {
       "stock": {
         "sold_out_label": "Coming Soon"
+      },
+      "order_summary": {
+        "taxes_label": "VAT",
+        "estimated_taxes_label": "VAT",
+        "estimated_tax_label": "Estimated VAT"
+      },
+      "payment": {
+        "taxes_not_included": "VAT not included"
       }
     },
     "notices": {
