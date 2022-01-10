@@ -56,22 +56,24 @@
     "show_second_image": false,
     "cart_quick_shop_show_quantity_input": false,
     "cart_notes_enable": true,
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/H9_marks_black-04.png",
+    "contact_support_phone": "+44 (0)208 962 9918",
+    "contact_support_address": "Unit 17, 2-4 Exmoor St, London W10 6BD",
     "contact_support_email": "studio@housenine.co.uk",
     "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/H9_MainLogo-01_6ab672aa-db27-4160-931e-72b00f80a028.png",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_size": "small",
     "checkout_body_background_image": "",
-    "checkout_body_background_color": "#fff",
+    "checkout_body_background_color": "#f3f1ec",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#197bbd",
-    "checkout_button_color": "#197bbd",
-    "checkout_error_color": "#e32c2b",
+    "checkout_accent_color": "#595b4f",
+    "checkout_button_color": "#595b4f",
+    "checkout_error_color": "#8c2120",
     "quick_cart_note": "Your subtotal today is [subtotal]. Shipping and taxes will calculated at checkout.",
     "color_input_inactive_text": "#7C7C7C",
     "color_sale_badge": "#bb4e39",
@@ -125,40 +127,16 @@
             "type": "mega_nav",
             "settings": {
               "dropdown_parent_link": "Store",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/Gara_Rock_Room_1-5757.jpg",
-              "featured_image_heading": "Headboards",
-              "featured_image_link_text": "Shop Now",
-              "featured_image_link": "shopify:\/\/collections\/all",
-              "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
-            }
-          },
-          "2a31fb6e-189c-4ccb-b0d1-613bcd809b30": {
-            "type": "mega_nav",
-            "settings": {
-              "dropdown_parent_link": "Services",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
-              "featured_image_heading": "",
-              "featured_image_link_text": "Full service",
-              "featured_image_link": "shopify:\/\/pages\/house-nine-full-service",
-              "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
-            }
-          },
-          "43129d90-2b16-4a6c-ae12-2e1a3008fe9b": {
-            "type": "mega_nav",
-            "settings": {
-              "dropdown_parent_link": "PORTFOLIO",
-              "mega_nav_featured_image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3748.jpg",
-              "featured_image_heading": "",
-              "featured_image_link_text": "",
-              "featured_image_link": "",
+              "mega_nav_featured_image": "shopify:\/\/shop_images\/House-Nine-Design-Goldbourne-Vanity-Unit-uai-720x960.jpg",
+              "featured_image_heading": "House Nine Reeded Vanity Units",
+              "featured_image_link_text": "In collaboration with Parker Howley & Co",
+              "featured_image_link": "https:\/\/www.parkerhowleynco.co.uk\/bathroom\/house-nine-collaboration\/?housenine",
               "feature_text": "<p>Mention a new sale, product line, or blog post here. <a href=\"#\">Don't forget to add a link →<\/a><\/p>"
             }
           }
         },
         "block_order": [
-          "90a49c56-35e7-4c7d-9081-aed2b13954d7",
-          "2a31fb6e-189c-4ccb-b0d1-613bcd809b30",
-          "43129d90-2b16-4a6c-ae12-2e1a3008fe9b"
+          "90a49c56-35e7-4c7d-9081-aed2b13954d7"
         ],
         "settings": {
           "header_style": "default",
@@ -168,7 +146,7 @@
           "show_currency_selector": false,
           "show_search": false,
           "logo": "shopify:\/\/shop_images\/H9_marks_black-06.png",
-          "logo_max_size": 220,
+          "logo_max_size": 280,
           "menu_right": "menu-right",
           "menu_left": "menu-left",
           "menu_mobile": "mobile-menu",
@@ -222,7 +200,7 @@
           "1602305412730"
         ],
         "settings": {
-          "logo_footer": "shopify:\/\/shop_images\/H9.png",
+          "logo_footer": "shopify:\/\/shop_images\/H9_MainLogo-01_6ab672aa-db27-4160-931e-72b00f80a028.png",
           "show_headings": true,
           "show_payment_icons": false,
           "show_newsletter_signup": true,
@@ -262,7 +240,7 @@
           "show_border": true,
           "show_heading": true,
           "show_small_heading": true,
-          "show_description": false,
+          "show_description": true,
           "heading_alignment": "center",
           "text_max_width": 38,
           "show_sort": false,
@@ -855,29 +833,61 @@
           "1638331836854fd80a-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/112102-House9-Project2-CotswoldBarn-22.jpg",
-              "link": "shopify:\/\/pages\/contact"
+              "image": "shopify:\/\/shop_images\/112102-House9-Project2-CotswoldBarn-22_ad5dca91-337b-43a0-a4ba-b64fbfb05dbb.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "1638331836854fd80a-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Gara_Rock_The_Signal_House-26web.jpg",
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3509_e040990b-bef8-49c8-821b-77004be46b90.jpg",
               "link": "shopify:\/\/pages\/portfolio"
             }
           },
           "1638331836854fd80a-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737.jpg",
-              "link": "shopify:\/\/collections"
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3617.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
+            }
+          },
+          "10552c37-cec9-4819-b180-dd2f586f958a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-82-upliad.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
+            }
+          },
+          "dab08e8c-1fc6-4dcc-982c-0471db7405f6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/House_Nine_Design_Zanna_our_surrey_nest3737_923b53ce-f506-49e5-b734-55cf07d68dd7.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
+            }
+          },
+          "2e66a5fe-4263-4548-91cf-2a798855a6b8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LakeHouseRe-Edit-3.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
+            }
+          },
+          "0f043797-c2be-4181-a03e-37b9becb9c50": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Copy_of_LakeHouseRe-Edit-11.jpg",
+              "link": "shopify:\/\/pages\/portfolio"
             }
           }
         },
         "block_order": [
           "1638331836854fd80a-0",
           "1638331836854fd80a-1",
-          "1638331836854fd80a-2"
+          "1638331836854fd80a-2",
+          "10552c37-cec9-4819-b180-dd2f586f958a",
+          "dab08e8c-1fc6-4dcc-982c-0471db7405f6",
+          "2e66a5fe-4263-4548-91cf-2a798855a6b8",
+          "0f043797-c2be-4181-a03e-37b9becb9c50"
         ],
         "settings": {
           "custom_class": "",
