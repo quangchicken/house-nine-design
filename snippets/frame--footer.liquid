@@ -12,7 +12,7 @@
 {% assign modifiers = '' %}
 
 {% unless show_headings %}
-  {% assign modifiers = modifiers | append: ' footer--hide-titles' %}
+  {% assign modifiers = modifiers | append: ' footer--hide-titles' %} 
 {% endunless %}
 
 <footer data-section-id="{{ id }}" data-section-type="footer" class="footer{{ modifiers }}">
@@ -21,9 +21,12 @@
         <div class="footer__container">
             <div class="row">
                 {% if section.settings.logo_footer != blank %}
+                {% assign image = section.settings.logo_footer | img_url: 'master' %}
+                {% assign image_2x = section.settings.logo_footer | img_url: 'master', scale: 2 %}
                 <div class="footer__top-logo">
                     <picture>
-                        <img src="{{ section.settings.logo_footer | img_url: 'x35', crop: 'center' }}" alt="" />
+                        <img src="{{ image_2x }}" alt="footer-logo" height="35px"/>
+                        <!-- <img src="{{ section.settings.logo_footer | img_url: 'x35', crop: 'center' }}" alt="" /> -->
                     </picture>
                 </div>
                 {% endif %}

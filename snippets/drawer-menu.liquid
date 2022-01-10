@@ -48,7 +48,7 @@
                         class="drawer-menu__search-input input-reset"
                         type="text"
                         name="q"
-                        placeholder="{{ 'search.placeholder' | t }}"
+                        placeholder="{{ 'search.placeholder' | t }}" 
                         data-input
                     />
                     <a class="drawer-menu__search-close" href="#" data-close>
@@ -63,9 +63,13 @@
             <a href="{{ routes.root_url }}" class="drawer-menu__logo{% if logo_uppercase %} ttu{% endif %}{% if logo != blank %} has-custom-logo{% endif %} logo-orientation--{{ logo_size_control }}">
                 {%- if logo != blank -%}
                     {% capture image_size %}{{ logo_max_size }}x{% endcapture %}
-                    <img
+                    <!-- <img
                         src="{{ logo | img_url: image_size }}"
                         srcset="{{ logo | img_url: image_size }} 1x, {{ logo | img_url: image_size, scale: 2 }} 2x"
+                        alt="{{ logo.alt | default: shop.name }}"> -->
+                    <img
+                        src="{{ logo | img_url: 'master', scale: 2 }}"
+                        srcset="{{ logo | img_url: 'master' }} 1x, {{ logo | img_url: 'master', scale: 2 }} 2x"
                         alt="{{ logo.alt | default: shop.name }}">
                     {%- else -%}
                     {{ shop.name }}
