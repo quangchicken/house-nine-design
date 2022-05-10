@@ -31,7 +31,7 @@
     },
     "404": {
       "title": "Página 404 no encontrada",
-      "subtext_html": "La página solicitada no existe. Haga clic  <a href=\"/collections/all\">aquí</a> para seguir comprando."
+      "subtext_html": "La página solicitada no existe. Haga clic  <a href=\"\/collections\/all\">aquí<\/a> para seguir comprando."
     },
     "pagination": {
       "viewing": "Estás viendo {{ of }} de {{ total }}",
@@ -55,7 +55,7 @@
       "signup_form_email_placeholder": "Su correo electrónico",
       "signup_form_button_label": "Notificarme",
       "signup_form_success": "¡Le enviaremos un correo electrónico justo antes de que abramos!",
-      "admin_link_html": "¿Es usted el propietario de la tienda? <a href=\"/admin\" class=\"text-link\">Inicie sesión aquí</a>",
+      "admin_link_html": "¿Es usted el propietario de la tienda? <a href=\"\/admin\" class=\"text-link\">Inicie sesión aquí<\/a>",
       "password_link": "Ingresar usando contraseña",
       "powered_by_shopify_html": " "
     },
@@ -121,7 +121,7 @@
     },
     "menu": {
       "logout": "Cerrar sesión",
-      "login_register": "Iniciar sesión / Registrarse"
+      "login_register": "Iniciar sesión \/ Registrarse"
     },
     "currency": {
       "dropdown_label": "Moneda"
@@ -137,7 +137,7 @@
   "sections": {
     "drawer_menu": {
       "account": {
-        "logged_out": "Registrarse / Iniciar sesión",
+        "logged_out": "Registrarse \/ Iniciar sesión",
         "logged_in": "Cerrar sesión"
       },
       "currency": "Moneda",
@@ -151,7 +151,7 @@
       "pause_slideshow": "Pausar presentación de diapositivas",
       "rotate_slideshow": "Reproducir presentación de diapositivas",
       "load_slide": "Cargar diapositiva {{ slide_number }}",
-      "navigation_instructions": "Usa las flechas izquierda/derecha para navegar por la presentación de diapositivas o deslice el dedo hacia la izquierda/derecha si usa un dispositivo móvil"
+      "navigation_instructions": "Usa las flechas izquierda\/derecha para navegar por la presentación de diapositivas o deslice el dedo hacia la izquierda\/derecha si usa un dispositivo móvil"
     },
     "featured_product": {
       "title": "Producto destacado",
@@ -163,7 +163,7 @@
     "map": {
       "address_error": "Error al buscar esa dirección",
       "address_no_results": "No hay resultados para esa dirección",
-      "address_query_limit_html": "Ha superado el límite de uso de la API de Google. Considere la posibilidad de actualizar a una <a href=\"https://developers.google.com/maps/premium/usage-limits\"> Premium Plan </a>. ",
+      "address_query_limit_html": "Ha superado el límite de uso de la API de Google. Considere la posibilidad de actualizar a una <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"> Premium Plan <\/a>. ",
       "auth_error_html": "Hubo un problema al autenticar su cuenta de Google Maps.",
       "section_heading": "Ubicación"
     },
@@ -226,21 +226,21 @@
     "general": {
       "title": "Su carrito",
       "note": "Agrega una nota a tu pedido",
-      "removed_item_html": "Se eliminó <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }} </span> de su carrito.",
+      "removed_item_html": "Se eliminó <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }} <\/span> de su carrito.",
       "currency": "Moneda",
       "remove": "Eliminar",
       "subtotal": "Total parcial",
       "savings": "Estás ahorrando",
       "shipping_at_checkout": "Impuestos y envío calculados al finalizar la compra",
       "taxes_and_shipping_at_checkout": "Impuestos y envío calculados al finalizar la compra.",
-      "taxes_and_shipping_policy_at_checkout_html": "Impuestos y <a href=\"{{ link }}\">envío</a> calculados al finalizar la compra.",
+      "taxes_and_shipping_policy_at_checkout_html": "Impuestos y <a href=\"{{ link }}\">envío<\/a> calculados al finalizar la compra.",
       "taxes_included_but_shipping_at_checkout": "Impuestos incluidos y envío calculado al finalizar la compra.",
-      "taxes_included_and_shipping_policy_html": "Impuestos incluidos. <a href=\"{{ link }}\">Envío</a> calculado al finalizar la compra.",
+      "taxes_included_and_shipping_policy_html": "Impuestos incluidos. <a href=\"{{ link }}\">Envío<\/a> calculado al finalizar la compra.",
       "update": "Actualizar",
       "checkout": "Ir a la caja",
       "empty": "Su carrito está vacío.",
       "cookies_required": "Habilitar cookies para usar el carrito de compras",
-      "continue_browsing_html": "Continúe navegando <a href=\"/collections/all\">aquí</a>.",
+      "continue_browsing_html": "Continúe navegando <a href=\"\/collections\/all\">aquí<\/a>.",
       "continue_shopping": "Continuar comprando",
       "cart_error": "Hubo un error al actualizar su carrito. Vuelva a intentarlo."
     },
@@ -350,9 +350,9 @@
       "address1": "Dirección",
       "address2": "Apartamento, suite, etc.",
       "city": "Ciudad",
-      "country": "País / Región",
+      "country": "País \/ Región",
       "province": "Provincia",
-      "zip": "Postal / Código postal",
+      "zip": "Postal \/ Código postal",
       "phone": "Teléfono",
       "set_default": "Establecer como dirección predeterminada",
       "add": "Agregar dirección",
@@ -496,7 +496,7 @@
       "vendor": "Proveedor",
       "quantity_minimum_message": "La cantidad debe ser 1 o más",
       "include_taxes": "Impuestos incluidos",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Envío</a> calculado al finalizar la compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envío<\/a> calculado al finalizar la compra.",
       "unit_price_label": "Precio unitario",
       "view_cart": "Ver carrito",
       "view": "Ver el producto completo",
@@ -536,7 +536,7 @@
       "products": "Productos"
     },
     "no_results": "No encontramos resultados de búsqueda para",
-    "no_results_html": "Pruebe con un término de búsqueda diferente o vuelva a la <a href=\"/\">página de inicio</a>.",
+    "no_results_html": "Pruebe con un término de búsqueda diferente o vuelva a la <a href=\"\/\">página de inicio<\/a>.",
     "placeholder": "Buscar productos, artículos, páginas",
     "results_with_count": {
       "one": "{{ count }} resultado para &ldquo;{{ terms }}&rdquo;",
@@ -560,8 +560,8 @@
       "check_other_stores": "Überprüfen Sie die Verfügbarkeit in anderen Geschäften",
       "pick_up_available": "Erhältlich zur Abholung im Geschäft",
       "pick_up_currently_unavailable": "Nicht zur Abholung im Geschäft verfügbar",
-      "pick_up_available_at_html": "Abholung bei <span>{{ location_name }}</span>",
-      "pick_up_unavailable_at_html": "Nicht zur Abholung bei <span>{{ location_name }}</span> verfügbar"
+      "pick_up_available_at_html": "Abholung bei <span>{{ location_name }}<\/span>",
+      "pick_up_unavailable_at_html": "Nicht zur Abholung bei <span>{{ location_name }}<\/span> verfügbar"
     }
   }
 }

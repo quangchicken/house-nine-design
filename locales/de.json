@@ -31,7 +31,7 @@
     },
     "404": {
       "title": "404 Seite nicht gefunden",
-      "subtext_html": "Die von Ihnen angeforderte Seite existiert nicht. Klicken Sie <a href=\"/collections/all\">hier,</a> um mit dem Einkaufen fortzufahren."
+      "subtext_html": "Die von Ihnen angeforderte Seite existiert nicht. Klicken Sie <a href=\"\/collections\/all\">hier,<\/a> um mit dem Einkaufen fortzufahren."
     },
     "pagination": {
       "viewing": "Seite {{ of }} von {{ total }}",
@@ -55,7 +55,7 @@
       "signup_form_email_placeholder": "Ihre E-Mail",
       "signup_form_button_label": "Benachrichtigen Sie mich",
       "signup_form_success": "Wir senden Ihnen kurz vor dem Öffnen eine E-Mail!",
-      "admin_link_html": "Sind Sie der Ladenbesitzer? <a href=\"/admin\" class=\"text-link\">Hier anmelden</a>",
+      "admin_link_html": "Sind Sie der Ladenbesitzer? <a href=\"\/admin\" class=\"text-link\">Hier anmelden<\/a>",
       "password_link": "Mit Passwort eingeben",
       "powered_by_shopify_html": " "
     },
@@ -121,7 +121,7 @@
     },
     "menu": {
       "logout": "Ausloggen",
-      "login_register": "Anmelden / Registrieren"
+      "login_register": "Anmelden \/ Registrieren"
     },
     "currency": {
       "dropdown_label": "Währung"
@@ -137,7 +137,7 @@
   "sections": {
     "drawer_menu": {
       "account": {
-        "logged_out": "Registrieren / Anmelden",
+        "logged_out": "Registrieren \/ Anmelden",
         "logged_in": "Ausloggen"
       },
       "currency": "Währung",
@@ -151,7 +151,7 @@
       "pause_slideshow": "Diashow anhalten",
       "rotate_slideshow": "Diashow abspielen",
       "load_slide": "Folie laden {{ slide_number }}",
-      "navigation_instructions": "Verwenden Sie die Pfeile nach links/rechts, um durch die Diashow zu navigieren, oder wischen Sie nach links/rechts, wenn Sie ein mobiles Gerät verwenden."
+      "navigation_instructions": "Verwenden Sie die Pfeile nach links\/rechts, um durch die Diashow zu navigieren, oder wischen Sie nach links\/rechts, wenn Sie ein mobiles Gerät verwenden."
     },
     "featured_product": {
       "title": "Empfohlenes Produkt",
@@ -163,7 +163,7 @@
     "map": {
       "address_error": "Fehler beim Nachschlagen dieser Adresse",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
-      "address_query_limit_html": "Sie haben das Nutzungslimit für die Google API überschritten. Erwägen Sie ein Upgrade auf eine <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Planen Sie</ a>.",
+      "address_query_limit_html": "Sie haben das Nutzungslimit für die Google API überschritten. Erwägen Sie ein Upgrade auf eine <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Planen Sie<\/ a>.",
       "auth_error_html": "Beim Authentifizieren Ihres Google Maps-Kontos ist ein Problem aufgetreten.",
       "section_heading": "Lage"
     },
@@ -226,21 +226,21 @@
     "general": {
       "title": "Dein Warenkorb",
       "note": "Fügen Sie Ihrer Bestellung eine Notiz hinzu",
-      "removed_item_html": "<span class =\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> aus Ihrem Warenkorb entfernt.",
+      "removed_item_html": "<span class =\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> aus Ihrem Warenkorb entfernt.",
       "currency": "Währung",
       "remove": "Entfernen",
       "subtotal": "Zwischensumme",
       "savings": "Sie sparen",
       "shipping_at_checkout": "Versandkosten an der Kasse berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versandkosten an der Kasse berechnet.",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versandkosten</a> berechnet an der Kasse.",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
       "taxes_included_but_shipping_at_checkout": "Steuern enthalten und Versand an der Kasse berechnet.",
-      "taxes_included_and_shipping_policy_html": "Steuern inbegriffen. <a href=\"{{ link }}\">Versandkosten</a> berechnet an der Kasse.",
+      "taxes_included_and_shipping_policy_html": "Steuern inbegriffen. <a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
       "update": "aktualisieren.",
       "checkout": "Auschecken",
       "empty": "Ihr Warenkorb ist derzeit leer.",
       "cookies_required": "Cookies aktivieren, um den Warenkorb zu verwenden",
-      "continue_browsing_html": "Stöbern Sie <a href=\"/collections/all\">hier</a> weiter.",
+      "continue_browsing_html": "Stöbern Sie <a href=\"\/collections\/all\">hier<\/a> weiter.",
       "continue_shopping": "Weiter einkaufen",
       "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
     },
@@ -350,7 +350,7 @@
       "address1": "Adresse",
       "address2": "Wohnung, Suite usw.",
       "city": "Stadt",
-      "country": "Land / Region",
+      "country": "Land \/ Region",
       "province": "Provinz",
       "zip": "Postleitzahl",
       "phone": "Telefon",
@@ -496,7 +496,7 @@
       "vendor": "Anbieter",
       "quantity_minimum_message": "Menge muss 1 oder mehr sein",
       "include_taxes": "Steuern inbegriffen.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Versandkosten</a> berechnet an der Kasse.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versandkosten<\/a> berechnet an der Kasse.",
       "unit_price_label": "Stückpreis",
       "view_cart": "Warenkorb anzeigen",
       "view": "Produktseite anzeigen",
@@ -560,8 +560,8 @@
       "check_other_stores": "Consultar disponibilidad en otras tiendas",
       "pick_up_available": "Disponible para recoger en tienda",
       "pick_up_currently_unavailable": "No se puede recoger en la tienda",
-      "pick_up_available_at_html": "Recoger en <span>{{ location_name }}</span>",
-      "pick_up_unavailable_at_html": "No disponible para recoger en <span>{{ location_name }}</span>"
+      "pick_up_available_at_html": "Recoger en <span>{{ location_name }}<\/span>",
+      "pick_up_unavailable_at_html": "No disponible para recoger en <span>{{ location_name }}<\/span>"
     }
   }
 }
