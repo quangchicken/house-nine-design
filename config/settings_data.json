@@ -239,7 +239,7 @@
           "text_color": "#ffffff",
           "show_border": true,
           "show_heading": true,
-          "show_small_heading": true,
+          "show_small_heading": false,
           "show_description": true,
           "heading_alignment": "center",
           "text_max_width": 38,
