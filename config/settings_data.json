@@ -133,10 +133,22 @@
               "featured_image_link": "https:\/\/www.parkerhowleynco.co.uk\/bathroom\/house-nine-collaboration\/?housenine",
               "feature_text": "<p>Shop our beautiful range of Headboards -  <a href=\"\/collections\/house-nine-headboard\" title=\"HEADBOARDS\">NOW LIVE →<\/a><\/p>"
             }
+          },
+          "4888a3c0-daf5-4739-bbd3-f0018aa8954d": {
+            "type": "mega_nav",
+            "settings": {
+              "dropdown_parent_link": "1:1 Expert Consultation",
+              "mega_nav_featured_image": "shopify:\/\/shop_images\/Jojo_Barr.jpg",
+              "featured_image_heading": "1:1 Expert Consultation",
+              "featured_image_link_text": "Schedule an online consultation via The Expert",
+              "featured_image_link": "",
+              "feature_text": ""
+            }
           }
         },
         "block_order": [
-          "90a49c56-35e7-4c7d-9081-aed2b13954d7"
+          "90a49c56-35e7-4c7d-9081-aed2b13954d7",
+          "4888a3c0-daf5-4739-bbd3-f0018aa8954d"
         ],
         "settings": {
           "header_style": "default",
