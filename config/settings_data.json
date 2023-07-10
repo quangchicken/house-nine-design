@@ -136,6 +136,7 @@
           },
           "4888a3c0-daf5-4739-bbd3-f0018aa8954d": {
             "type": "mega_nav",
+            "disabled": true,
             "settings": {
               "dropdown_parent_link": "Services",
               "mega_nav_featured_image": "shopify:\/\/shop_images\/Jojo_Barr.jpg",
